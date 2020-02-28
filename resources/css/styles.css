@@ -113,14 +113,22 @@ input {
   background: none;
   border: none;
   border-bottom: solid 1px #fff;
+  color: #fff;
 }
 input::placeholder {
   color: #fff;
 }
 
+input[type=text] {
+  padding: 1%;
+}
+
 button {
   background: none;
-  border: none;
+  border: solid 1px #fff;
+  color: #fff;
+  padding: 1vh 2vw;
+  cursor: pointer;
 }
 
 @font-face {
@@ -233,6 +241,24 @@ button {
   padding: 1%;
 }
 
+#formInscription {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 20%;
+  margin-top: 2%;
+}
+
+input {
+  width: 100%;
+  margin: 5% 0;
+}
+
+button {
+  align-self: flex-end;
+}
+
 @font-face {
   font-family: zektonrg;
   src: url(../font/zektonrg.ttf) format("truetype");
@@ -256,6 +282,14 @@ a {
 
 h1 {
   font-size: 1.8vw;
+}
+
+.centerPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 /*# sourceMappingURL=styles.css.map */

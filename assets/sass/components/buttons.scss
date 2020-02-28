@@ -1,4 +1,8 @@
+@import '../utils/variables';
 button{
     background: none;
-    border: none;
+    border: solid 1px $white;
+    color: $white;
+    padding: 1vh 2vw;
+    cursor: pointer;
 }

@@ -3,8 +3,13 @@ input{
     background: none;
     border: none;
     border-bottom: solid 1px $white;
+    color: $white;
 
     &::placeholder{
         color: $white;
     }
+}
+
+input[type=text]{
+    padding: 1%;
 }
