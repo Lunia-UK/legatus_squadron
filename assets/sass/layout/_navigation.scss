@@ -1,0 +1,57 @@
+@import '../utils/variables';
+.primary-nav{
+    width: 100%;
+    height: auto;
+    #band{
+        position: absolute;
+        z-index: -1;
+    }
+}
+
+#menu{
+    width: 40%;
+    margin: 0 34%;
+    padding-top: .4%;
+
+    li{
+        display: inline-block;
+        width: 7.5%;
+        height: auto;
+        margin-left: 9%;
+        cursor: pointer;
+        position: relative;
+        transition: all 0.3s ease-out;
+
+        a{
+            color: $white;
+            font-weight: 200;
+            font-size: 17px;
+        }
+    }
+}
+
+.icon-individuel_section, .icon-document, .icon-logout{
+    height: 3vh;
+    stroke: #d4e8ff;
+}
+
+#title{
+    display: block;
+    float: right;
+    margin: 1% 5%;
+    text-transform: capitalize;
+    font-size: 1vw;
+}
+
+
+#bandDeg{
+    display: block;
+    height: 1px;
+    width: 100%;
+    margin: 3% 0;
+    background-image: linear-gradient(142deg, rgba(255,0,0,0) 20%, $white 70%, #ffffff 100% );
+}
+
+.resize,.menuTel{
+    display: none;
+}
