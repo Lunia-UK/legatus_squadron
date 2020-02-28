@@ -1,0 +1,10 @@
+@import '../utils/variables';
+input{
+    background: none;
+    border: none;
+    border-bottom: solid 1px $white;
+
+    &::placeholder{
+        color: $white;
+    }
+}

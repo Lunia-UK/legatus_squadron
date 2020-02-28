@@ -1,0 +1,12 @@
+// Font & Variables
+@font-face {
+    font-family: zektonrg;
+    src: url(../font/zektonrg.ttf) format("truetype");}
+    
+@font-face {
+    font-family: Prometheus;
+    src: url(../font/PROMETHEUS.ttf) format("truetype");
+}
+
+$font-primary: zektonrg;
+$font-large : 1.8vw;

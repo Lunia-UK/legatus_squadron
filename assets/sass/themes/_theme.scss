@@ -1,5 +1,17 @@
 @import '../utils/variables';
+@import '../base/typography';
 
 body{
     background-color: $background-color;
+    font-family: $font-primary;
 }
+
+a, body{
+    color: $white;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{font-size: $font-large;}

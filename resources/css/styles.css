@@ -47,13 +47,215 @@ td:not([align]), th:not([align]) {
   text-align: left;
 }
 
+@font-face {
+  font-family: zektonrg;
+  src: url(../font/zektonrg.ttf) format("truetype");
+}
+@font-face {
+  font-family: Prometheus;
+  src: url(../font/PROMETHEUS.ttf) format("truetype");
+}
+.checkboxContainer {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #fff;
+}
+.checkboxContainer input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkboxContainer:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.checkmark {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  height: 15px;
+  width: 15px;
+  background-color: #eee;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkboxContainer input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkboxContainer .checkmark:after {
+  left: 5px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid #0f172a;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+input {
+  background: none;
+  border: none;
+  border-bottom: solid 1px #fff;
+}
+input::placeholder {
+  color: #fff;
+}
+
 button {
   background: none;
   border: none;
 }
 
+@font-face {
+  font-family: zektonrg;
+  src: url(../font/zektonrg.ttf) format("truetype");
+}
+@font-face {
+  font-family: Prometheus;
+  src: url(../font/PROMETHEUS.ttf) format("truetype");
+}
+.line {
+  position: absolute;
+  z-index: -1;
+  fill: none;
+  stroke-width: 4;
+  animation: line 2.3s linear forwards;
+}
+
+@keyframes line {
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.path {
+  stroke-dasharray: 2000;
+  stroke-dashoffset: 2000;
+  animation: dash 1s linear forwards;
+  fill: none;
+}
+
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  animation: logo 1.7s linear forwards;
+  animation-delay: 0.7s;
+}
+
+@keyframes logo {
+  80% {
+    opacity: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    opacity: 1;
+    left: 10%;
+    top: 15%;
+    transform: scale(0.4, 0.4);
+  }
+}
+.section-login {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  position: absolute;
+  width: 75%;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: article 2.3s linear forwards;
+}
+.section-login .login {
+  width: 60%;
+}
+.section-login .description {
+  width: 40%;
+}
+
+@keyframes article {
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#fp, #fp2 {
+  position: absolute;
+  top: 70%;
+  left: 90%;
+  stroke: #aaaaaa;
+  width: 5%;
+  cursor: pointer;
+}
+
+#fp2:hover {
+  stroke: white;
+  stroke-dasharray: 2000;
+  stroke-dashoffset: 2000;
+  animation: dash 1s linear forwards;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.inputLogin {
+  width: 30%;
+  margin: 3% 5%;
+  padding: 1%;
+}
+
+@font-face {
+  font-family: zektonrg;
+  src: url(../font/zektonrg.ttf) format("truetype");
+}
+@font-face {
+  font-family: Prometheus;
+  src: url(../font/PROMETHEUS.ttf) format("truetype");
+}
 body {
   background-color: #0A0F15;
+  font-family: zektonrg;
+}
+
+a, body {
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 1.8vw;
 }
 
 /*# sourceMappingURL=styles.css.map */

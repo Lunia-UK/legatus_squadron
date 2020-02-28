@@ -1,9 +1,17 @@
-@import 'base/reset',
-'components/buttons.scss',
-'layout/header',
-'layout/navigation',
-'pages/adminitration',
-'pages/documents',
-'pages/home',
-'themes/theme',
-'utils/variables';
+@import 'base/reset';
+@import 'base/typography';
+
+@import 'components/checkbox';
+@import 'components/input.scss';
+@import 'components/buttons.scss';
+
+@import 'layout/header';
+@import 'layout/navigation';
+
+@import 'pages/adminitration';
+@import 'pages/documents';
+@import 'pages/home';
+
+@import 'themes/theme';
+
+@import 'utils/variables';

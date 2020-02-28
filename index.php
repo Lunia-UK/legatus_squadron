@@ -67,9 +67,9 @@
                     $pseudo = '';
                     $pass = '';
                 } ?>
-            <form class="forumulaire" action="src/php/validation-login.php" method="post">
-                <input class="pseudoInput" type="text" placeholder="Matricule" name="pseudo" value=<?php echo $pseudo; ?>>
-                <input class="pwInput" type="password" placeholder="Mot de passe" name="pass"  value= <?php echo $pass; ?>>
+            <form class="formLogin" action="src/php/validation-login.php" method="post">
+                <input class="inputLogin" type="text" placeholder="Matricule" name="pseudo" value=<?php echo $pseudo; ?>>
+                <input class="inputLogin" type="password" placeholder="Mot de passe" name="pass"  value= <?php echo $pass; ?>>
                     
                 <!-- Svg Figer print -->
                   <button type="submit">
