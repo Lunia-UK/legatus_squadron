@@ -55,3 +55,80 @@
 .resize,.menuTel{
     display: none;
 }
+
+.resize{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    border : solid #67D9F7 1px;
+    background-color: #041B30;
+    width: 100%;
+    padding: 18px;
+}
+
+
+#btn-menu{
+    float: right;
+    background: none;
+    border : none;
+}
+
+
+.btn-menu-open{
+    height: 95vh;
+    transition: .6s;
+}
+
+.menuTel{
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 10vh 3%;
+    z-index: 3;
+    list-style-type: none;
+    li {
+        margin-top: 7vh;
+        a{
+            color: $white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+    }
+}
+
+.menuTelAdmin{
+    display: none;
+
+    li {
+        margin-top: 1.5vh;
+        a{
+            color: $white;
+            text-decoration: none;
+            font-size: 16px; 
+        }
+    }
+}
+
+@media(max-width: $break-large) {
+
+    .primary-nav {
+        display: none;
+    }
+
+    .resize, .resize h1{
+        display: block;
+    }
+
+    .resize h1
+    {
+      position: absolute;
+      top: 20px;
+      left:50px;
+      margin: 0;
+      font-size: 18px;
+      z-index: 3;
+
+    }
+}
