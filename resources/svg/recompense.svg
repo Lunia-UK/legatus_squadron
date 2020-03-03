@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="9" viewBox="0 0 24 9">
+  <g id="recompense" transform="translate(16341 7463)">
+    <g id="Rectangle_217" data-name="Rectangle 217" transform="translate(-16341 -7463)" fill="#fff" stroke="#fff" stroke-width="1">
+      <rect width="24" height="9" stroke="none"/>
+      <rect x="0.5" y="0.5" width="23" height="8" fill="none"/>
+    </g>
+    <line id="Line_187" data-name="Line 187" y1="9" transform="translate(-16338.5 -7463)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="Line_189" data-name="Line 189" y1="9" transform="translate(-16321.5 -7463)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="Line_188" data-name="Line 188" y1="9" transform="translate(-16336.5 -7463)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="Line_190" data-name="Line 190" y1="9" transform="translate(-16319.5 -7463)" fill="none" stroke="#707070" stroke-width="1"/>
+  </g>
+</svg>
