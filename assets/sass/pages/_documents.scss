@@ -196,9 +196,13 @@ aside{
 .doubleCut {
     position:relative;
     margin: 15px;
-    padding:0px 30px;
-    color:#000;
+    padding: 10px 30px;
     background:rgba(130, 162, 250, 0.055);
+
+    h3{
+        margin: 10px;
+        font-size: 1vw;
+    }
 }
 
 .doubleCut:before {
@@ -284,10 +288,12 @@ aside{
     overflow: auto;
     padding: 0 10px;
     margin: 0;
+
 }
 
 .para{
     margin-left: 20px;
+    font-size: .8vw;
 }
 
 

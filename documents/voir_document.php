@@ -7,18 +7,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../resources/css/styles.css">
-    <title>Voir documents</title>
+    <title>Document du <?php echo $rapport_mission['date_mission']; ?></title>
 </head>
 <body>
 <div class="header">
       <?php include '../components/navigation/nav_beginning.html'; ?>
             <a href="../section_individuelle"><h4 id="pseudo"><?php //echo $_SESSION['short_rank_name'] . " " . $_SESSION['pseudo'];?></h4></a>
         <?php include '../components/navigation/nav_mid.html'; ?>
-            <h5>Documents</h5>
+            <h5>Document du <?php echo $rapport_mission['date_mission']; ?></h5>
         <?php include '../components/navigation/nav_end.html'; ?>
     </div>
     <div class="voir-doc-documents" id="format1">
-        <img src="../assets/img/documents/<?php echo $document['image_1']; ?>" alt="">
+        <!-- <img src="../assets/img/documents/<?php //echo $document['image_1']; ?>" alt=""> -->
     </div>
     <div class="voir-doc-mission" id="format3">
         <div class="largeScreen">
@@ -103,5 +103,6 @@
             </div>
     </div>
     <script src="../resources/js/navigation.js"></script>
+    <script src="../resources/js/youtube_api.php"></script>
 </body>
 </html>
