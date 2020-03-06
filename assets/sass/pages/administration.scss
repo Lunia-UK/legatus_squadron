@@ -1,0 +1,19 @@
+.container-adm{
+    margin: 0 auto;
+    width: 90%;
+    height: 84vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    transition: .5s;
+}
+
+.container-adm-big{
+    margin: 0 auto;
+    width: 82%;
+    height: 84vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
