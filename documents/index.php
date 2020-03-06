@@ -139,47 +139,47 @@
         </div>
     </section>
     <aside class="aside-large-screen">
-                <div class="search-bar-container ">
-                      <input onkeyup="search()" type="text" class="search-bar" placeholder="Chercher un membre..." title="Type in a name">
-                </div>
-                <ul class="filters filterContainer">
-                  <li class="filter"><a href="#legatus" title="Legatus"><img src="../resources/img/logo/logo-w.png" alt="Legatus Icone" width="40px"></a></li>
-                  <li class="filter active" ><a href="#mission" title="Missions"><img src="../resources/svg/rapport.svg" alt="Rapports de missions" width="20px"></a></li>
-                  <li class="filter"><a href="#sl" title="Squad Lead">SL</a></li>
-                  <li class="filter"><a href="#calendrier" title="Calendrier"><img src="../resources/svg/calendrier.svg" alt="Calendrier" width="30px"></a></li>
-                  <li class="filter"><a href="#recompenses" title="Recompenses"><img src="../resources/svg/recompense.svg" alt="Recompenses" width="40px"></a></li>
-                </ul>
-             </aside>
-             <aside class="aside-small-screen">
-                <div class="search-bar-container">
-                      <input onkeyup="search()" type="text" class="search-bar" placeholder="Chercher un membre..." title="Type in a name">
-                </div>
-                <div class="filter-container-mobile">
-                    <a href="#"><button id="btn-filter">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32.884" height="28" viewBox="0 0 32.884 28">
-                              <g id="filter" transform="translate(-310.914 -101)">
-                                <path id="Path_8" data-name="Path 8" d="M0,0H32.884" transform="translate(310.914 103.925)" fill="none" stroke="#67d9f7" stroke-width="1"/>
-                                <line id="Line_6" data-name="Line 6" x2="32.884" transform="translate(310.914 114.886)" fill="none" stroke="#67d9f7" stroke-width="1"/>
-                                <line id="Line_7" data-name="Line 7" x2="32.884" transform="translate(310.914 125.848)" fill="none" stroke="#67d9f7" stroke-width="1"/>
-                                <circle id="Ellipse_18" data-name="Ellipse 18" cx="3" cy="3" r="3" transform="translate(314 112)" fill="#67d9f7"/>
-                                <circle id="Ellipse_19" data-name="Ellipse 19" cx="3" cy="3" r="3" transform="translate(329 101)" fill="#67d9f7"/>
-                                <circle id="Ellipse_20" data-name="Ellipse 20" cx="3" cy="3" r="3" transform="translate(324 123)" fill="#67d9f7"/>
-                              </g>
-                            </svg>
-                        </button></a>
-                    <ul class="filters filtre-mobile" id="myBtnContainer">
-                      <li ><a class="btn" href="#legatus">Legatus</a></li>
-                      <li class="active"><a class="btn" href="#mission">Rapports</a></li>
-                      <li><a class="btn" href="#sl">SL</a></li>
-                      <li><a class="btn" href="#calendrier">Calendrier</a></li>
-                      <li><a class="btn" href="#recompenses">Recompenses</a></li>
-                    </ul>
-                </div>
-             </aside>
-        </div>
+       <div class="search-bar-container ">
+             <input onkeyup="search()" type="text" class="search-bar" placeholder="Chercher un membre..." title="Type in a name">
+       </div>
+       <ul class="filters filterContainer">
+         <li class="filter"><a href="#legatus" title="Legatus"><img src="../resources/img/logo/logo-w.png" alt="Legatus Icone" width="40px"></a></li>
+         <li class="filter active" ><a href="#mission" title="Missions"><img src="../resources/svg/rapport.svg" alt="Rapports de missions" width="20px"></a></li>
+         <li class="filter"><a href="#sl" title="Squad Lead">SL</a></li>
+         <li class="filter"><a href="#calendrier" title="Calendrier"><img src="../resources/svg/calendrier.svg" alt="Calendrier" width="30px"></a></li>
+         <li class="filter"><a href="#recompenses" title="Recompenses"><img src="../resources/svg/recompense.svg" alt="Recompenses" width="40px"></a></li>
+       </ul>
+    </aside>
+    <aside class="aside-small-screen">
+       <div class="search-bar-container">
+             <input onkeyup="search()" type="text" class="search-bar" placeholder="Chercher un membre..." title="Type in a name">
+       </div>
+       <div class="filter-container-mobile">
+           <a href="#"><button id="btn-filter">
+                   <svg xmlns="http://www.w3.org/2000/svg" width="32.884" height="28" viewBox="0 0 32.884 28">
+                     <g id="filter" transform="translate(-310.914 -101)">
+                       <path id="Path_8" data-name="Path 8" d="M0,0H32.884" transform="translate(310.914 103.925)" fill="none" stroke="#67d9f7" stroke-width="1"/>
+                       <line id="Line_6" data-name="Line 6" x2="32.884" transform="translate(310.914 114.886)" fill="none" stroke="#67d9f7" stroke-width="1"/>
+                       <line id="Line_7" data-name="Line 7" x2="32.884" transform="translate(310.914 125.848)" fill="none" stroke="#67d9f7" stroke-width="1"/>
+                       <circle id="Ellipse_18" data-name="Ellipse 18" cx="3" cy="3" r="3" transform="translate(314 112)" fill="#67d9f7"/>
+                       <circle id="Ellipse_19" data-name="Ellipse 19" cx="3" cy="3" r="3" transform="translate(329 101)" fill="#67d9f7"/>
+                       <circle id="Ellipse_20" data-name="Ellipse 20" cx="3" cy="3" r="3" transform="translate(324 123)" fill="#67d9f7"/>
+                     </g>
+                   </svg>
+               </button></a>
+           <ul class="filters filtre-mobile" id="myBtnContainer">
+             <li ><a class="btn" href="#legatus">Legatus</a></li>
+             <li class="active"><a class="btn" href="#mission">Rapports</a></li>
+             <li><a class="btn" href="#sl">SL</a></li>
+             <li><a class="btn" href="#calendrier">Calendrier</a></li>
+             <li><a class="btn" href="#recompenses">Recompenses</a></li>
+           </ul>
+       </div>
+    </aside>
+  </div>
     <script src="../resources/js/navigation.js"></script>
     <script src="../resources/js/filter_documents_mobile.js"></script>
-
+    <script src="../resources/js/search.js"></script>
     <script src="../resources/js/filter_documents.js"></script>
 </body>
 </html>
