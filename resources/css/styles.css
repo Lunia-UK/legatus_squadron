@@ -255,17 +255,6 @@ button {
     z-index: 3;
   }
 }
-.block-nav {
-  position: fixed;
-  width: 120px;
-  height: 81vh;
-  margin-right: 20px;
-  float: left;
-  top: 0;
-  left: 0;
-  transition: 0.5s;
-}
-
 .cut {
   position: relative;
   padding: 20px;
@@ -280,6 +269,27 @@ button {
   border-width: 0px 50px 50px 0px;
   border-style: solid;
   border-color: transparent #0A0F15 transparent #0A0F15;
+}
+
+.block-nav {
+  position: fixed;
+  width: 120px;
+  height: 81vh;
+  margin-right: 20px;
+  float: left;
+  top: 15%;
+  left: 0;
+  transition: 0.5s;
+}
+
+.block-nav-big {
+  position: fixed;
+  width: 200px;
+  height: 81vh;
+  margin-right: 20px;
+  float: left;
+  top: 15%;
+  left: 0;
 }
 
 .list-menu-admin {
@@ -297,22 +307,24 @@ button {
 .list-menu-admin-big {
   margin: auto;
   padding: 0;
-  width: 230px;
+  width: 180px;
 }
 .list-menu-admin-big li {
   list-style-type: none;
-  width: 230px;
+  width: 180px;
   height: 25px;
   margin: 4.5vh 0;
 }
 
 .nav-admin-text {
   display: none;
+  opacity: 0;
 }
 
 .nav-admin-text-big {
   display: inline;
   vertical-align: center;
+  margin: 0 1vw;
 }
 
 .arrow {
