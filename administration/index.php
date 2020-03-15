@@ -24,7 +24,24 @@
             <?php include '../components/navigation/nav_administration.html'; ?>
         </div>
         <section class="container-adm">
-
+            <article class="block-large cut">
+                <div class="graph-mission-admin">
+                    <canvas  id="graph-mission-admin" width="1600" height="325"></canvas>
+                </div>
+                <div class="graph-mission-admin-tablette">
+                    <canvas  id="graph-mission-admin-tTablette" width="820" height="350"></canvas>
+                </div>
+                <div class="graph-mission-admin-small-tablette">
+                    <canvas  id="graph-mission-admin-small-tablette" width="650" height="350"></canvas>
+                </div>
+                <div class="graph-mission-admin-mobile">
+                    <canvas  id="graph-mission-admin-mobile" width="600" height="400"></canvas>
+                </div>
+            </article>
+            <article class="block-mid cut">
+            </article>
+            <article class="block-mid cut">
+            </article>
         </section>
     <div>
     <script src="../resources/js/nav_administration.js"></script>
