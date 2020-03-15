@@ -28,3 +28,9 @@ h1{font-size: $font-large;}
 #pseudo{
     position: relative;
 }
+
+.blocked{
+    color: $blocked;
+    fill: $blocked;
+    cursor: no-drop;
+}

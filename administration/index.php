@@ -44,6 +44,6 @@
             </article>
         </section>
     <div>
-    <script src="../resources/js/nav_administration.js"></script>
+    <?php include '../resources/js/nav_administration.php'; ?>
 </body>
 </html>

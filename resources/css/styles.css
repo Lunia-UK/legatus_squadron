@@ -379,6 +379,10 @@ button {
   margin: 1%;
 }
 
+.svg-fill {
+  fill: #fff;
+}
+
 .body {
   display: flex;
   flex-flow: column nowrap;
@@ -1020,6 +1024,12 @@ h1 {
 
 #pseudo {
   position: relative;
+}
+
+.blocked {
+  color: #808080;
+  fill: #808080;
+  cursor: no-drop;
 }
 
 /*# sourceMappingURL=styles.css.map */
