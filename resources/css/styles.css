@@ -339,6 +339,11 @@ button {
   width: 24px;
 }
 
+@media (max-width: 1850px) {
+  .block-nav {
+    display: none;
+  }
+}
 .container-adm {
   margin: 0 auto;
   margin-left: 8%;

@@ -83,3 +83,9 @@
     transform: rotate(-180deg);
     width: 24px;
 }
+
+@media(max-width: 1850px) {
+    .block-nav{
+        display: none;
+    }
+}

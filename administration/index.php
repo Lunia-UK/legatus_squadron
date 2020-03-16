@@ -1,6 +1,6 @@
 <?php session_start(); ?>
 <?php include '../src/connexion.php'; ?>
-<?php // include '../src/config/config_admin_dashboard.php'; ?>
+<?php include '../src/config/config_admin_dashboard.php'; ?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -26,16 +26,16 @@
         <section class="container-adm">
             <article class="block-large cut">
                 <div class="graph-mission-admin">
-                    <canvas  id="graph-mission-admin" width="1600" height="325"></canvas>
+                    <canvas  id="graph_mission_admin" width="1600" height="325"></canvas>
                 </div>
                 <div class="graph-mission-admin-tablette">
-                    <canvas  id="graph-mission-admin-tTablette" width="820" height="350"></canvas>
+                    <canvas  id="graph_mission_admin_tablette" width="820" height="350"></canvas>
                 </div>
                 <div class="graph-mission-admin-small-tablette">
-                    <canvas  id="graph-mission-admin-small-tablette" width="650" height="350"></canvas>
+                    <canvas  id="graph_mission_admin_small_tablette" width="650" height="350"></canvas>
                 </div>
                 <div class="graph-mission-admin-mobile">
-                    <canvas  id="graph-mission-admin-mobile" width="600" height="400"></canvas>
+                    <canvas  id="graph_mission_admin_mobile" width="600" height="400"></canvas>
                 </div>
             </article>
             <article class="block-mid cut">
@@ -45,5 +45,6 @@
         </section>
     <div>
     <?php include '../resources/js/nav_administration.php'; ?>
+    <?php include '../resources/js/graph_mission_admin.php'; ?>
 </body>
 </html>
