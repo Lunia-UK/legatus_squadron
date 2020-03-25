@@ -26,7 +26,7 @@
         <section class="container-adm">
         <div class="block_Xl cut">
                 <form action="">
-                    <div class="formulaireContainer">
+                    <div class="formulaire-container">
                         <div class="column1">
                             <label>Date de la mission:</label>
                             <input type="text" name="date" value=<?php echo $today; ?>>
@@ -52,11 +52,11 @@
                         </div>
                         <div class="column2">
                             <label>Objectif:</label>
-                            <textarea class="textareaColumn2" name="objectif"  placeholder="Veuillez décrire l'objectif initial de la mission" rows="4" required></textarea>
+                            <textarea class="textarea-rapport-mission" name="objectif" placeholder="Veuillez décrire l'objectif initial de la mission" rows="4" required></textarea>
                         </div>
                         <div class="column2">
                             <label>Description:</label>
-                            <textarea class="textareaColumn2" name="description" rows="4"  placeholder="Veuillez décrire les évènements majeurs de la mission"></textarea>
+                            <textarea class="textarea-rapport-mission" name="description" rows="4"  placeholder="Veuillez décrire les évènements majeurs de la mission"></textarea>
                         </div>
                             <div class="column3">
                             <table id="myTable">
@@ -80,7 +80,7 @@
                                             </select>
                                         </td>
                                         <td data-label="Nom participant">
-                                            <input class="nomParticipant" placeholder="pseudo..." list="participants" name="pseudo[1]" id="myInput1">
+                                            <input class="nom-participant" placeholder="pseudo..." list="participants" name="pseudo[1]" id="myInput1">
                                             <datalist id="participants">
                                             <?php
                                             foreach($listeDesMembres as $cle => $element)
@@ -94,7 +94,7 @@
                                         <div class="tooltip"><input type="checkbox" name="vie[1]" value=1 checked><span class="tooltiptext">Rester en vie</span></div>
                                         </td>
                                         <td data-label="Commentaire">
-                                        <textarea class="commentaire" name="commentaire[1]" rows="1" cols="30" placeholder="..."></textarea>
+                                        <textarea class="textarea-rapport-mission" name="commentaire[1]" rows="1" cols="30" placeholder="..."></textarea>
                                         </td>
                                         <td><input type="button" class='closeBtn' value="&times;" onclick="deleteRow(this)"></td>
                                     </tr>
@@ -110,7 +110,7 @@
                                             </select>
                                         </td>
                                         <td data-label="Nom participant">
-                                            <input class="nomParticipant" placeholder="pseudo..." list="participants" name="pseudo[1]" id="myInput1">
+                                            <input class="nom-participant" placeholder="pseudo..." list="participants" name="pseudo[1]" id="myInput1">
                                             <datalist id="participants">
                                             <?php
                                             foreach($listeDesMembres as $cle => $element)
@@ -124,7 +124,7 @@
                                         <div class="tooltip"><input type="checkbox" name="vie[1]" value=1 checked><span class="tooltiptext">Rester en vie</span></div>
                                         </td>
                                         <td data-label="Commentaire">
-                                        <textarea class="commentaire" name="commentaire[1]" rows="1" cols="30" placeholder="..."></textarea>
+                                        <textarea class="textarea-rapport-mission" name="commentaire[1]" rows="1" cols="30" placeholder="..."></textarea>
                                         </td>
                                         <td><input type="button" class='closeBtn' value="&times;" onclick="deleteRow(this)"></td>
                                     </tr>
@@ -140,7 +140,7 @@
                                             </select>
                                         </td>
                                         <td data-label="Nom participant">
-                                            <input class="nomParticipant" placeholder="pseudo..." list="participants" name="pseudo[1]" id="myInput1">
+                                            <input class="nom-participant" placeholder="pseudo..." list="participants" name="pseudo[1]" id="myInput1">
                                             <datalist id="participants">
                                             <?php
                                             foreach($listeDesMembres as $cle => $element)
@@ -154,7 +154,7 @@
                                         <div class="tooltip"><input type="checkbox" name="vie[1]" value=1 checked><span class="tooltiptext">Rester en vie</span></div>
                                         </td>
                                         <td data-label="Commentaire">
-                                        <textarea class="commentaire" name="commentaire[1]" rows="1" cols="30" placeholder="..."></textarea>
+                                        <textarea class="textarea-rapport-mission" name="commentaire[1]" rows="1" cols="30" placeholder="..."></textarea>
                                         <td><input type="button" class='closeBtn' value="&times;" onclick="deleteRow(this)"></td>
                                         </td>
                                     </tr>
@@ -170,7 +170,7 @@
                                             </select>
                                         </td>
                                         <td data-label="Nom participant">
-                                            <input class="nomParticipant" placeholder="pseudo..." list="participants" name="pseudo[1]" id="myInput1">
+                                            <input class="nom-participant" placeholder="pseudo..." list="participants" name="pseudo[1]" id="myInput1">
                                             <datalist id="participants">
                                             <?php
                                             foreach($listeDesMembres as $cle => $element)
@@ -184,7 +184,7 @@
                                         <div class="tooltip"><input type="checkbox" name="vie[1]" value=1 checked><span class="tooltiptext">Rester en vie</span></div>
                                         </td>
                                         <td data-label="Commentaire">
-                                        <textarea class="commentaire" name="commentaire[1]" rows="1" cols="30" placeholder="..."></textarea>
+                                        <textarea class="textarea-rapport-mission" name="commentaire[1]" rows="1" cols="30" placeholder="..."></textarea>
                                         </td>
                                         <td><input type="button" class='closeBtn' value="&times;" onclick="deleteRow(this)"></td>
                                     </tr>

@@ -258,7 +258,6 @@ button {
 .cut {
   position: relative;
   padding: 20px;
-  color: #000;
   background: rgba(130, 162, 250, 0.055);
 }
 .cut:after {
@@ -999,6 +998,232 @@ button {
   align-self: flex-end;
 }
 
+.formulaire-container {
+  margin-top: 50px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.column1 {
+  height: 80px;
+  width: 25%;
+  min-width: 200px;
+}
+
+.column2 {
+  height: 180px;
+  width: 50%;
+  margin: auto;
+}
+
+.column3 {
+  width: 100%;
+  height: 38vh;
+  overflow: auto;
+}
+
+label {
+  display: block;
+}
+
+input[type=text] {
+  background: none;
+  color: #fff;
+  font-family: zektonrg;
+  border: none;
+  border-bottom: 1px solid #fff;
+}
+
+::placeholder {
+  color: #979797;
+}
+
+.nom-participant {
+  text-align: center;
+  background: none;
+  border: none;
+  border-bottom: #fff solid 1px;
+  color: #fff;
+}
+
+.textarea-rapport-mission {
+  appearance: none;
+  width: 90%;
+  background: none;
+  resize: none;
+  color: #fff;
+  font-family: zektonrg;
+  border: solid #fff 1px;
+  padding: 10px;
+}
+
+select {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 160px;
+  height: 30px;
+  text-align: center;
+  background: rgba(18, 38, 65, 0.7);
+  border: solid 1px #fff;
+  color: #fff;
+  font-family: zektonrg;
+  font-size: 15px;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #0a1324;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 155%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.9s;
+  transition-delay: 0.5s;
+}
+.tooltip .tooltiptext:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #0a1324 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+  z-index: 3;
+}
+
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow: auto;
+  table-layout: fixed;
+}
+table caption {
+  font-size: 1.5em;
+  margin: 0.5em 0 0.75em;
+}
+table tr {
+  border: 1px solid #ddd;
+  padding: 0.35em;
+}
+table th,
+table td {
+  padding: 0.625em;
+  text-align: center;
+}
+table th {
+  font-size: 0.85em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.containerButton {
+  display: flex;
+  justify-content: center;
+  width: 10%;
+  margin-top: 1.5%;
+}
+
+button[type=submit] {
+  position: absolute;
+  bottom: 7%;
+  right: 100;
+}
+
+@media screen and (max-width: 1200px) {
+  .column1 {
+    width: 45%;
+  }
+
+  .column2 {
+    width: 100%;
+  }
+
+  .column3 {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden auto;
+  }
+
+  .textarea-rapport-mission {
+    width: 100%;
+  }
+
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: 0.625em;
+  }
+
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: 0.8em;
+    text-align: right;
+  }
+
+  table td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  table td:last-child {
+    border-bottom: 0;
+  }
+
+  .commentaire {
+    width: 60%;
+    float: none;
+    padding: 0px;
+  }
+}
 @font-face {
   font-family: zektonrg;
   src: url(../font/zektonrg.ttf) format("truetype");
