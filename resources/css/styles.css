@@ -998,6 +998,78 @@ button {
   align-self: flex-end;
 }
 
+#msg {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scan {
+  position: absolute;
+  width: 170px;
+  height: 2px;
+  z-index: 3;
+  background-color: #3E9CFF;
+  animation: 3.5s scan forwards;
+}
+
+@keyframes scan {
+  0% {
+    top: 90px;
+  }
+  10% {
+    top: 50px;
+  }
+  20% {
+    top: 20px;
+  }
+  30% {
+    top: 80px;
+  }
+  40% {
+    top: 60px;
+  }
+  40% {
+    top: 90px;
+  }
+  50% {
+    top: 120px;
+  }
+  60% {
+    top: 90px;
+  }
+  70% {
+    top: 160px;
+  }
+  80% {
+    top: 100px;
+  }
+  80% {
+    top: 70px;
+  }
+  90% {
+    top: 84px;
+  }
+  100% {
+    top: 90px;
+  }
+}
+.chargement {
+  position: absolute;
+  top: 180px;
+  width: 150px;
+}
+.chargement .chargement-text {
+  float: left;
+}
+.chargement .text {
+  float: right;
+}
+
 .formulaire-container {
   margin-top: 50px;
   display: flex;
