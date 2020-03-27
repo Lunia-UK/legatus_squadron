@@ -12,7 +12,7 @@
 <body>
 <div class="header">
       <?php include '../components/navigation/nav_beginning.html'; ?>
-            <a href="../section_individuelle"><h4 id="pseudo"><?php //echo $_SESSION['short_rank_name'] . " " . $_SESSION['pseudo'];?></h4></a>
+            <a href="../section_individuelle"><h4 id="pseudo"><?php echo $_SESSION['short_rank_name'] . " " . $_SESSION['pseudo'];?></h4></a>
         <?php include '../components/navigation/nav_mid.html'; ?>
             <h5>Document du <?php echo $rapport_mission['date_mission']; ?></h5>
         <?php include '../components/navigation/nav_end.html'; ?>

@@ -1330,7 +1330,10 @@ h1 {
 }
 
 #pseudo {
-  position: relative;
+  position: absolute;
+  top: 1.5%;
+  left: 3%;
+  font-size: 1.8vw;
 }
 
 .blocked {
