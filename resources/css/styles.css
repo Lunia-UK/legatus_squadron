@@ -193,7 +193,7 @@ button {
   border: solid #67D9F7 1px;
   background-color: #041B30;
   width: 100%;
-  padding: 18px;
+  padding: 10px;
 }
 
 #btn-menu {
@@ -1077,6 +1077,64 @@ button {
   transform: translate(-50%, -50%);
   width: 95%;
   z-index: -2;
+}
+
+.container-grid {
+  display: grid;
+  grid-template-columns: auto 34.9% 28.1% 8.3% 20.8% auto;
+  grid-template-rows: auto 19vh 13.5vh 14.5vh 15vh 7vh 18vh auto;
+  grid-template-areas: " . . . . . . " " . legatus cercle medaille medaille . " " . legatus cercle carte carte . " " . mission cercle carte carte  . " " . mission cercle oxy oxy . " " . mission  cercle oxy oxy . " " . mission  historique historique commentaire  . " " . . . . . . ";
+}
+
+.legatus {
+  grid-area: legatus;
+}
+.legatus .groupe {
+  margin: 50px 10px 0;
+  max-width: 70%;
+  height: auto;
+  float: left;
+}
+.legatus .groupe img {
+  width: 100%;
+}
+.legatus .logo-groupe {
+  margin: 50px 10px 0;
+  width: 80px;
+  height: 80px;
+  float: right;
+}
+
+.mission {
+  grid-area: mission;
+}
+
+.cercle {
+  grid-area: cercle;
+}
+
+.historique {
+  grid-area: historique;
+}
+
+.medaille {
+  grid-area: medaille;
+}
+
+.carte {
+  grid-area: carte;
+}
+
+.oxy {
+  grid-area: oxy;
+}
+
+.commentaire {
+  grid-area: commentaire;
+}
+
+.kia {
+  grid-area: kia;
 }
 
 .formulaire-container {

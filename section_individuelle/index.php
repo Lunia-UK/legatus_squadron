@@ -44,12 +44,90 @@ $(document).ready(function(){
           <?php include '../components/navigation/nav_mid.html'; ?>
               <h5>Section individuelle</h5>
           <?php include '../components/navigation/nav_end.html'; ?>
-    </div>
+    
     <div class="body">
         <div class="container-grid">
+            <!-- Legatus -->
+            <div class="legatus">
+                <!-- Name -->
+                <svg height="60" width="300" xmlns:xlink="http://www.w3.org/1999/xlink" style="position: absolute; left:0">
+                    <filter id="shadowLegatus" x="0" y="0" width="300" height="175" filterUnits="userSpaceOnUse">
+                        <feOffset dx="5" dy="5" input="SourceAlpha"/>
+                        <feGaussianBlur stdDeviation="0.5" result="blur"/>
+                        <feFlood flood-color="#fff" flood-opacity="0.2"/>
+                        <feComposite operator="in" in2="blur"/>
+                        <feComposite in="SourceGraphic"/>
+                    </filter>
+                    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#shadowLegatus)">
+                        <text x="50" y="40" fill="#fff" style="font-size:25px">Legatus Squadron</text>
+                    </g>
+                </svg>
+                <!-- Groupe -->
+                <div class="groupe">
+                    <img src="../resources/img/groupe/<?php
+                    switch($_SESSION['id_groupe_principal'])
+                    {
+                      case 0 :
+                      echo 'academie';
+                      break;
+                  
+                      case 1 :
+                      echo 'eagle';
+                      break;
+                  
+                      case 2 :
+                      echo 'rogue';
+                      break;
+                  
+                      case 3 :
+                      echo 'seals';
+                      break;
+                  
+                      case 4 :
+                      echo 'papaBear';
+                      break;
+                  
+                      case 5 :
+                      echo 'cerberus';
+                      break;
+                    }
+                    ?>.png" alt="">
+                </div>
+                <div class="logo-groupe">
+                    <img src="../resources/img/logo/<?php
+                    switch($_SESSION['id_groupe_principal'])
+                    {
+                      case 0 :
+                      echo 'academie';
+                      break;
+
+                      case 1 :
+                      echo 'eagle';
+                      break;
+
+                      case 2 :
+                      echo 'rogue';
+                      break;
+
+                      case 3 :
+                      echo 'seals';
+                      break;
+
+                      case 4 :
+                      echo 'biere';
+                      break;
+
+                      case 5 :
+                      echo 'logo-w';
+                      break;
+                    }
+                    ?>.png" width="80px" alt="">
+                </div>
+            </div>
         </div>
         <?php include '../resources/svg/structure.html'; ?>
     </div>
+</div>
 </div>
 <script>
    setTimeout(function(){ 
