@@ -46,7 +46,9 @@ $(document).ready(function(){
           <?php include '../components/navigation/nav_end.html'; ?>
     </div>
     <div class="body">
-
+        <div class="container-grid">
+        </div>
+        <?php include '../resources/svg/structure.html'; ?>
     </div>
 </div>
 <script>
