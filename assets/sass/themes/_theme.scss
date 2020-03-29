@@ -4,7 +4,20 @@
 body{
     background-color: $background-color;
     font-family: $font-primary;
+    scrollbar-color: $white $blue;
+    scrollbar-width: thin;
 }
+
+::-webkit-scrollbar {
+    width: 5px;
+    height:5px;
+  }
+  ::-webkit-scrollbar-track {
+    background: $blue;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: $white;
+  }
 
 a, body{
     color: $white;

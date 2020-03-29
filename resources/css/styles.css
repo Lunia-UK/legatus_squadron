@@ -168,7 +168,7 @@ button {
 #title {
   display: block;
   float: right;
-  margin: 1% 5%;
+  margin: 0.8% 5%;
   text-transform: capitalize;
   font-size: 1vw;
 }
@@ -177,7 +177,7 @@ button {
   display: block;
   height: 1px;
   width: 100%;
-  margin: 3% 0;
+  margin: 3% 0 0 0;
   background-image: linear-gradient(142deg, rgba(255, 0, 0, 0) 20%, #fff 70%, #ffffff 100%);
 }
 
@@ -1104,6 +1104,28 @@ button {
   height: 80px;
   float: right;
 }
+.legatus .list-membre {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 40px 0 auto;
+  width: 22%;
+  height: 170px;
+  font-size: 0.8rem;
+  float: right;
+}
+.legatus .membres {
+  max-height: 150px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+}
+.legatus .list-membre-svg {
+  position: absolute;
+  top: 0;
+  z-index: -2;
+}
 
 .mission {
   grid-area: mission;
@@ -1374,6 +1396,21 @@ button[type=submit] {
 body {
   background-color: #0A0F15;
   font-family: zektonrg;
+  scrollbar-color: #fff #101726;
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #101726;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fff;
 }
 
 a, body {

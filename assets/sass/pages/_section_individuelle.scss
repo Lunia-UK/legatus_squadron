@@ -85,7 +85,31 @@
     width: 80px;
     height: 80px;
     float: right;
+  }
+  .list-membre{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 40px 0 auto ;
+    width: 22%;
+    height: 170px;
+    font-size: .8rem;   
+    float: right;
 }
+
+    .membres{
+        max-height: 150px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        scrollbar-width: thin;
+    }
+
+    .list-membre-svg{
+        position: absolute;
+        top:0;
+        z-index: -2;
+    }
 }
 
 .mission{

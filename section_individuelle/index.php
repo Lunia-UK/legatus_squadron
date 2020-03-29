@@ -49,7 +49,7 @@ $(document).ready(function(){
         <div class="container-grid">
             <!-- Legatus -->
             <div class="legatus">
-                <!-- Name -->
+                <!-- Name Section -->
                 <svg height="60" width="300" xmlns:xlink="http://www.w3.org/1999/xlink" style="position: absolute; left:0">
                     <filter id="shadowLegatus" x="0" y="0" width="300" height="175" filterUnits="userSpaceOnUse">
                         <feOffset dx="5" dy="5" input="SourceAlpha"/>
@@ -93,6 +93,7 @@ $(document).ready(function(){
                     }
                     ?>.png" alt="">
                 </div>
+                <!-- Logo groupe -->
                 <div class="logo-groupe">
                     <img src="../resources/img/logo/<?php
                     switch($_SESSION['id_groupe_principal'])
@@ -123,9 +124,94 @@ $(document).ready(function(){
                     }
                     ?>.png" width="80px" alt="">
                 </div>
+                <!-- Holograme ship -->
+                <div class="holo clear" id="containerHolo" style="position: relative;">
+                    <p style="position: absolute; top: 0px;left: 10px ;opacity: .8" ><?php
+                        switch($_SESSION['id_groupe_principal'])
+                        {
+                          case 0 :
+                          echo 'Endeavor';
+                          break;
+                      
+                          case 1 :
+                          echo 'Sabre';
+                          break;
+                      
+                          case 2 :
+                          echo 'Octobre rouge';
+                          break;
+                      
+                          case 3 :
+                          echo 'Nova tank';
+                          break;
+                      
+                          case 4 :
+                          echo 'Hercules';
+                          break;
+                      
+                          case 5 :
+                          echo 'Octobre rouge';
+                          break;
+                        }
+                    ?></p>
+                    <p style="position: absolute; top: 20px;left: 10px; opacity: .8; font-size: 12px;"><?php
+                        switch($_SESSION['id_groupe_principal'])
+                        {
+                          case 0 :
+                          echo '';
+                          break;
+
+                          case 1 :
+                          echo '4 T3';
+                          break;
+
+                          case 2 :
+                          echo '6 Tourelles';
+                          break;
+
+                          case 3 :
+                          echo '24 missiles T3';
+                          break;
+
+                          case 4 :
+                          echo '';
+                          break;
+
+                          case 5 :
+                          echo '6 Tourelles';
+                          break;
+                        }
+                    ?></p>
+                </div>
+                <!-- List membre du groupe -->
+                <div class="list-membre">
+                    <svg class="list-membre-svg" xmlns="http://www.w3.org/2000/svg" width="130" height="170">
+                      <defs>
+                          <filter id="shadowLdM" x="0" y="0" width="130" height="175" filterUnits="userSpaceOnUse">
+                            <feOffset dx="6" dy="6" input="SourceAlpha"/>
+                            <feGaussianBlur stdDeviation="0.5" result="blur"/>
+                            <feFlood flood-color="#fff" flood-opacity="0.3"/>
+                            <feComposite operator="in" in2="blur"/>
+                            <feComposite in="SourceGraphic"/>
+                          </filter>
+                        </defs>
+                      <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#shadowLdM)">
+                        <polyline points="5,5 100,5 125,35 125,165 5,165 5,5" stroke="#fff" stroke-width="2" fill="rgba(255,255,255,.04)"/>
+                        </g>
+                    </svg>
+                    <div class="membres">
+                        <p class="center">
+                        <?php
+                            foreach($members as $cle => $element)
+                            {
+                              echo $element['pseudo'] . '<br/>';
+                            }
+                        ?></p>
+                    </div>
+                </div>
             </div>
         </div>
-        <?php include '../resources/svg/structure.html'; ?>
+        <?php include '../resources/svg/structure.html'; ?> <!-- Strcuture SVG -->
     </div>
 </div>
 </div>
@@ -133,6 +219,106 @@ $(document).ready(function(){
    setTimeout(function(){ 
      document.querySelector('#body').style.display ="block" 
      document.querySelector('#msg').style.display ="none" ;}, 3000);
+</script>
+<script src="../resources/js/three.min.js"></script>
+<script src="../resources/js/gltfloader.js"></script>
+<script>
+let scene, camera, renderer;
+function init() {
+  var container = document.getElementById("containerHolo");
+  var WIDTH = 300,
+  HEIGHT = 150;
+  scene = new THREE.Scene();
+  camera = new THREE.PerspectiveCamera(<?php
+    switch($_SESSION['id_groupe_principal'])
+    {
+        case 0:
+            echo '15';
+            break;
+        case 1:
+            echo '60';
+            break;
+        case 2:
+            echo '3.5';
+            break;
+        case 3:
+            echo '60';
+            break;
+        case 4:
+            echo '20';
+            break;
+        case 5:
+            echo '3.5';
+            break;
+    }
+    ?>,window.innerWidth/window.innerHeight,1,5000);
+  camera.rotation.y = 45/180*Math.PI;
+  camera.position.x = 1100;
+  camera.position.y = 100;
+  camera.position.z = 0;
+  controls = new THREE.OrbitControls(camera);
+  controls.addEventListener('change', renderer);
+  controls.enabled = false;
+  hlight = new THREE.AmbientLight (0x404040,50);
+  scene.add(hlight);
+  directionalLight = new THREE.DirectionalLight(0x404040,1);
+  directionalLight.position.set(0,1,0);
+  directionalLight.castShadow = true;
+  scene.add(directionalLight);
+  light = new THREE.PointLight(0xc4c4c4,1);
+  light.position.set(0,300,500);
+  scene.add(light);
+  light2 = new THREE.PointLight(0xc4c4c4,1);
+  light2.position.set(500,100,0);
+  scene.add(light2);
+  light3 = new THREE.PointLight(0xc4c4c4,1);
+  light3.position.set(0,100,-500);
+  scene.add(light3);
+  light4 = new THREE.PointLight(0xc4c4c4,1);
+  light4.position.set(-500,300,500);
+  scene.add(light4);
+  renderer = new THREE.WebGLRenderer({antialias:true, alpha: true}); // Transparence
+  renderer.setClearColor(0x000000, 0);// Transparence
+  renderer.autoClear = true;// Transparence
+  renderer.setSize(WIDTH, HEIGHT);
+  container.appendChild(renderer.domElement);
+  let loader = new THREE.GLTFLoader();
+  loader.load('<?php
+    switch($_SESSION['id_groupe_principal'])
+    {
+        case 0:
+            echo '../assets/obj/ende.gltf';
+            break;
+        case 1:
+            echo '../assets/obj/sabre.gltf';
+            break;
+        case 2:
+            echo '../assets/obj/hh.gltf';
+            break;
+        case 3:
+            echo '../assets/obj/tank.gltf';
+            break;
+        case 4:
+            echo '../assets/obj/hercules.gltf';
+            break;
+        case 5:
+            echo '../assets/obj/hh.gltf';
+            break;
+    }
+        ?>', function(gltf){
+        car = gltf.scene.children[0];
+        car.scale.set(0.5,0.5,0.5);
+        scene.rotation.x += 0.01;
+        scene.add(gltf.scene);
+        animate();
+        });
+    }
+    function animate() {
+      scene.rotation.y += 0.0015;
+      renderer.render(scene,camera);
+      requestAnimationFrame(animate);
+    }
+    init();
 </script>
 </body>
 </html>
