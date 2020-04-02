@@ -1135,6 +1135,44 @@ button {
 
 .mission {
   grid-area: mission;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.mission .pourcentage {
+  margin: 20px 0 0px 30px;
+  width: 250px;
+  height: 250px;
+}
+.mission .pourcentage h4 {
+  margin: 20px 0 5px 0px;
+  font-size: 1vw;
+}
+.mission .pourcentage .containerBar {
+  width: 100%;
+  border: solid 1px #FFF;
+  border: #253168 solid 1px;
+}
+.mission .pourcentage .containerBar .back {
+  background: none !important;
+}
+.mission .pourcentage .containerBar .skill {
+  text-align: right;
+  color: white;
+  padding-right: 20px;
+  line-height: 13px;
+}
+.mission .pourcentage .containerBar #sauvetage {
+  background: #3385b7;
+}
+.mission .pourcentage .containerBar #combat {
+  background: #530b00;
+}
+.mission .pourcentage .containerBar #logistique {
+  background: #d69200;
+}
+.mission .pourcentage .containerBar #exploration {
+  background: #425d00;
 }
 
 .cercle {

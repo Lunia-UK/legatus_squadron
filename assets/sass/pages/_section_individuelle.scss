@@ -120,6 +120,51 @@
 
 .mission{
   grid-area: mission;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
+    .pourcentage{
+      margin: 20px 0 0px 30px;
+      width: 250px;
+      height: 250px;
+
+      h4 {
+        margin: 20px 0 5px 0px;
+        font-size: 1vw;
+      }
+      .containerBar{
+        width: 100%;
+        border: solid 1px #FFF;
+        border: rgb(37, 49, 104) solid 1px;
+        .back {
+          background: none !important;
+        }
+  
+        .skill {
+            text-align: right;
+            color: white;
+            padding-right: 20px;
+            line-height: 13px;
+        }
+      
+        #sauvetage{
+            background: #3385b7;
+        }
+      
+        #combat{
+            background: #530b00;
+        }
+      
+        #logistique{
+            background: #d69200;
+        }
+      
+        #exploration{
+            background: #425d00;
+        }
+      }
+  }
 }
 
 .cercle{

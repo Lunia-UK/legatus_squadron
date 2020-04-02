@@ -225,7 +225,34 @@ $(document).ready(function(){
                     <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#shadowLegatus)">
                         <text x="88" y="25" fill="#fff" style="font-size:25px">Missions</text>
                       </g>
-                </svg>  
+                </svg> 
+                <!--Pourcentages -->  
+                <div class="pourcentage">  
+                    <h4>Combat</h4>    
+                    <div class="containerBar">
+                        <div class="back skillbar clearfix"  data-percent="<?php echo intval($box_missions); ?>%">
+                             <div class="skill skillbar-bar" id="combat" style="height:15px;width:0%;"><?php echo intval($box_missions);?>%</p></div>
+                        </div>
+                    </div>
+                    <h4>Sauvetage</h4>   
+                    <div class="containerBar">
+                        <div class="back skillbar clearfix"  data-percent="<?php echo intval($box_missions2); ?>%">
+                             <div class="skill skillbar-bar" id="sauvetage" style="height:15px;width:0%;"><?php echo intval($box_missions2);?>%</p></div>
+                        </div>
+                    </div>
+                    <h4>Logistique</h4>  
+                    <div class="containerBar">
+                        <div class="back skillbar clearfix" data-percent="<?php echo intval($box_missions3); ?>%">
+                             <div class="skill skillbar-bar" id="logistique" style="height:15px;width:0%;"><?php echo intval($box_missions3);?>%</p></div>
+                        </div>
+                    </div>
+                    <h4>Exploration</h4> 
+                    <div class="containerBar">
+                        <div class="back skillbar clearfix" data-percent="<?php echo intval($box_missions4); ?>%">
+                             <div class="skill skillbar-bar" id="exploration" style="height:15px;width:0%;"><?php echo intval($box_missions4);?>%</p></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <?php include '../resources/svg/structure.html'; ?> <!-- Strcuture SVG -->
@@ -237,6 +264,7 @@ $(document).ready(function(){
      document.querySelector('#body').style.display ="block" 
      document.querySelector('#msg').style.display ="none" ;}, 3000);
 </script>
+<script src="../resources/js/skill_bar.js"></script>
 <script src="../resources/js/three.min.js"></script>
 <script src="../resources/js/gltfloader.js"></script>
 <script src="../resources/js/orbitcontrols.js"></script>
