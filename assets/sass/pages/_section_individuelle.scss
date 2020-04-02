@@ -184,6 +184,24 @@
 }
 .historique{
   grid-area: historique;
+  .historique-container{
+    margin: 65px auto 10px;
+    width: 90%;
+    height: 120px;
+    display: flex;
+    flex-flow: row nowrap;
+    overflow-x: auto;
+}
+
+    .mission-histo{
+        margin: 0 2px;
+        padding: 2px;
+        width: 25px;
+        min-width: 25px;
+        height: 90px;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+    }
 }
 
 .medaille{

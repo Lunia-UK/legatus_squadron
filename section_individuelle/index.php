@@ -264,6 +264,70 @@ $(document).ready(function(){
                     <canvas  id="graph_mission"></canvas>
                 </div>
             </div>
+
+            <!--Cercle -->
+            <div class="cercle"></div>
+
+            <!--Historique -->
+            <div class="historique" style="position: relative;">
+              <p style="position: absolute; top: -50px; left:-5%;writing-mode: vertical-rl;text-orientation: upright;">Historique</p>
+                <div class="historique-container">
+                <?php
+                      $i = 0;
+                      if($casesVides!=0)
+                      {
+                        for($i=1;$i<$casesVides;$i++) {
+                          echo '<div  id="' . $i . ' myBtn2" class="mission-histo" style="border: solid 1px grey" ></div>';
+                          // code couleur de la case (mission effectuée, mais pas de rapport de mission encodé)
+                        }
+                        echo '<div  id="' . $i . 'myBtn2" class="missionHisto" style="border: solid 1px grey"></div>';
+                      }
+                      if($historiqueMissions!=0)
+                      {
+                        foreach($historiqueMissions as $cle => $element)
+                        {
+                          $i++;
+                          ?><form action="../documents/voir_document.php" method="post">
+                          <input name="hidden_mission" type="hidden" value="<?php echo $element['id_mission'];?>">
+                          <button style="background:none;"><div id="<?php echo $i;?> myBtn2" <?php
+                          switch($element['id_type_mission'])
+                          {
+                            case 1 :
+                            echo 'style="border: solid 1px #3385b7"';
+                            break;
+
+                            case 2 :
+                            echo 'style="border: solid 1px #6e0a0a""';
+                            break;
+
+                            case 3 :
+                            echo 'style="border: solid 1px #425d00"';
+                            break;
+
+                            case 4 :
+                            echo 'style="border: solid 1px #d69200"';
+                            break;
+
+                        }
+                        ?> class="mission-histo" ><?php echo $element['date_mission'] ?></div></button>
+                          </form><?php
+                          // code de l'affichage de la fiche de mission
+                          // code couleur de la case (en fonction des stats de la mission)
+                        }
+                      }
+                      if($_SESSION['rang']!=18)
+                      {
+                        while($i<$gradeSuivant['missions_total'])
+                        {
+                          $i++;
+                          echo '<div id="' . $i . ' myBtn2" class="mission-histo" style="border: solid 1px black"></div>';
+                        // code couleur de la case (case vide)
+                        }
+                      }
+                      ?>
+
+                </div>
+            </div>
         </div>
         <?php include '../resources/svg/structure.html'; ?> <!-- Strcuture SVG -->
     </div>
