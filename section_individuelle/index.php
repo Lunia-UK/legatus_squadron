@@ -210,6 +210,23 @@ $(document).ready(function(){
                     </div>
                 </div>
             </div>
+
+            <!--Missions-->
+            <div class="mission">
+                <!-- Name Section -->
+                <svg  height="60" width="300" xmlns:xlink="http://www.w3.org/1999/xlink" style="position: absolute; left:0">
+                  <filter id="shadowLegatus" x="0" y="0" width="300" height="175" filterUnits="userSpaceOnUse">
+                      <feOffset dx="5" dy="5" input="SourceAlpha"/>
+                      <feGaussianBlur stdDeviation="0.5" result="blur"/>
+                      <feFlood flood-color="#fff" flood-opacity="0.2"/>
+                      <feComposite operator="in" in2="blur"/>
+                      <feComposite in="SourceGraphic"/>
+                    </filter>
+                    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#shadowLegatus)">
+                        <text x="88" y="25" fill="#fff" style="font-size:25px">Missions</text>
+                      </g>
+                </svg>  
+            </div>
         </div>
         <?php include '../resources/svg/structure.html'; ?> <!-- Strcuture SVG -->
     </div>

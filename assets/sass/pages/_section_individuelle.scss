@@ -86,12 +86,18 @@
     height: 80px;
     float: right;
   }
+  .holo{
+    margin: 10px auto 0 20px  ;
+    width: 60%;
+    height: 170px;
+    float: left;
+  }
   .list-membre{
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px 40px 0 auto ;
+    margin: 10px 60px 0 auto ;
     width: 22%;
     height: 170px;
     font-size: .8rem;   
