@@ -1230,6 +1230,33 @@ button {
 .carte {
   grid-area: carte;
 }
+.carte .carte-img {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 80px;
+}
+.carte img {
+  margin: 20px auto;
+  width: 430px;
+  height: 230px;
+}
+.carte .photo-carte img {
+  height: 100%;
+}
+.carte .carte h2 {
+  display: none;
+  text-align: center;
+}
+.carte .carte-text {
+  position: absolute;
+  right: 20px;
+  width: 270px;
+  font-size: 13px;
+  line-height: 13px;
+}
 
 .oxy {
   grid-area: oxy;

@@ -351,6 +351,48 @@ $(document).ready(function(){
                   }?>
                   </div>
             </div>
+
+            <!--Carte-->
+            <div class="carte">
+                <h2><?php echo $_SESSION['pseudo'];?></h2>
+                <div class="carte-img">
+                <img src="../resources/img/Carte.png" alt="" >
+                <div class="carte-text">
+                    <p><?php echo $_SESSION['rank_name'] ;?></p>
+                    <p><?php echo $_SESSION['pseudo'];?></p>
+                    <p>Groupe principal : <?php
+                    switch($_SESSION['id_groupe_principal'])
+                    {
+                        case 0:
+                            echo 'Académie';
+                            break;
+
+                        case 1:
+                            echo 'Eagle';
+                            break;
+
+                        case 2:
+                            echo 'Rogue';
+                            break;
+
+                        case 3:
+                            echo 'Seals';
+                            break;
+
+                        case 4:
+                            echo 'Papa Bear';
+                            break;
+
+                        case 5:
+                            echo 'Cerberus';
+                            break;
+                    }
+                    ?></p>
+                    <p><?php echo 'Spécialité : ' .  $_SESSION['specialisation'];?></p>
+                    <p><?php echo 'Missions effectuées : ' . $_SESSION['missions_total'];?></p>
+                </div>
+                </div>
+            </div>
         </div>
         <?php include '../resources/svg/structure.html'; ?> <!-- Strcuture SVG -->
     </div>
