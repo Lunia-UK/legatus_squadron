@@ -222,6 +222,7 @@ $(document).ready(function(){
 </script>
 <script src="../resources/js/three.min.js"></script>
 <script src="../resources/js/gltfloader.js"></script>
+<script src="../resources/js/orbitcontrols.js"></script>
 <script>
 let scene, camera, renderer;
 function init() {
@@ -287,22 +288,22 @@ function init() {
     switch($_SESSION['id_groupe_principal'])
     {
         case 0:
-            echo '../assets/obj/ende.gltf';
+            echo '../resources/obj/ende.gltf';
             break;
         case 1:
-            echo '../assets/obj/sabre.gltf';
+            echo '../resources/obj/sabre.gltf';
             break;
         case 2:
-            echo '../assets/obj/hh.gltf';
+            echo '../resources/obj/hh.gltf';
             break;
         case 3:
-            echo '../assets/obj/tank.gltf';
+            echo '../resources/obj/tank.gltf';
             break;
         case 4:
-            echo '../assets/obj/hercules.gltf';
+            echo '../resources/obj/hercules.gltf';
             break;
         case 5:
-            echo '../assets/obj/hh.gltf';
+            echo '../resources/obj/hh.gltf';
             break;
     }
         ?>', function(gltf){
