@@ -1174,6 +1174,13 @@ button {
 .mission .pourcentage .containerBar #exploration {
   background: #425d00;
 }
+.mission .role {
+  margin: 60px 0 0 0;
+  width: 380px;
+}
+.mission .role h3 {
+  margin: 0;
+}
 
 .cercle {
   grid-area: cercle;
