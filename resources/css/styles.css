@@ -1181,6 +1181,11 @@ button {
 .mission .role h3 {
   margin: 0;
 }
+.mission .graph_mission {
+  margin: 0px;
+  width: 400px;
+  height: 250px;
+}
 
 .cercle {
   grid-area: cercle;

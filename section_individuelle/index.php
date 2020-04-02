@@ -258,6 +258,11 @@ $(document).ready(function(){
                     <h3 style="text-align:center; color:#d4e8ff"> Role en mission : </h3>
                     <canvas id="graph_role" ></canvas>
                 </div>
+                <!--Graph missions -->
+                <div class="graph_mission" >  
+                    <h3 style="text-align:center; color:#d4e8ff"> Missions effectuées : </h3>
+                    <canvas  id="graph_mission"></canvas>
+                </div>
             </div>
         </div>
         <?php include '../resources/svg/structure.html'; ?> <!-- Strcuture SVG -->
@@ -271,6 +276,7 @@ $(document).ready(function(){
 </script>
 <script src="../resources/js/skill_bar.js"></script>
 <?php include '../resources/js/graph_role.php';?>
+<?php include '../resources/js/graph_mission.php';?>
 <script src="../resources/js/three.min.js"></script>
 <script src="../resources/js/gltfloader.js"></script>
 <script src="../resources/js/orbitcontrols.js"></script>
