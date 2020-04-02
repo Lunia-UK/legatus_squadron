@@ -1213,6 +1213,18 @@ button {
 
 .medaille {
   grid-area: medaille;
+  width: 580px;
+  height: 200px;
+}
+.medaille .medaille-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.medaille img {
+  margin: 5px;
+  max-width: 15%;
 }
 
 .carte {

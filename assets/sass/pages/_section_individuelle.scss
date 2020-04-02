@@ -206,6 +206,19 @@
 
 .medaille{
   grid-area: medaille;
+  //margin: 10px 0  20px 70px ;
+  width: 580px;
+  height: 200px;
+  .medaille-container{
+    display: flex;
+    flex-flow: row wrap ;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+   img{
+    margin: 5px;
+    max-width: 15%;
+  }
 }
 
 .carte{
