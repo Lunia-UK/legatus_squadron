@@ -127,7 +127,6 @@ button {
   background: none;
   border: solid 1px #fff;
   color: #fff;
-  padding: 1vh 2vw;
   cursor: pointer;
 }
 
@@ -168,7 +167,7 @@ button {
 #title {
   display: block;
   float: right;
-  margin: 1% 5%;
+  margin: 0.8% 5%;
   text-transform: capitalize;
   font-size: 1vw;
 }
@@ -177,7 +176,7 @@ button {
   display: block;
   height: 1px;
   width: 100%;
-  margin: 3% 0;
+  margin: 3% 0 0 0;
   background-image: linear-gradient(142deg, rgba(255, 0, 0, 0) 20%, #fff 70%, #ffffff 100%);
 }
 
@@ -1104,9 +1103,87 @@ button {
   height: 80px;
   float: right;
 }
+.legatus .holo {
+  margin: 10px auto 0 20px;
+  width: 60%;
+  height: 170px;
+  float: left;
+}
+.legatus .list-membre {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 60px 0 auto;
+  width: 22%;
+  height: 170px;
+  font-size: 0.8rem;
+  float: right;
+}
+.legatus .membres {
+  max-height: 150px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+}
+.legatus .list-membre-svg {
+  position: absolute;
+  top: 0;
+  z-index: -2;
+}
 
 .mission {
   grid-area: mission;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.mission .pourcentage {
+  margin: 20px 0 0px 30px;
+  width: 250px;
+  height: 250px;
+}
+.mission .pourcentage h4 {
+  margin: 20px 0 5px 0px;
+  font-size: 1vw;
+}
+.mission .pourcentage .containerBar {
+  width: 100%;
+  border: solid 1px #FFF;
+  border: #253168 solid 1px;
+}
+.mission .pourcentage .containerBar .back {
+  background: none !important;
+}
+.mission .pourcentage .containerBar .skill {
+  text-align: right;
+  color: white;
+  padding-right: 20px;
+  line-height: 13px;
+}
+.mission .pourcentage .containerBar #sauvetage {
+  background: #3385b7;
+}
+.mission .pourcentage .containerBar #combat {
+  background: #530b00;
+}
+.mission .pourcentage .containerBar #logistique {
+  background: #d69200;
+}
+.mission .pourcentage .containerBar #exploration {
+  background: #425d00;
+}
+.mission .role {
+  margin: 60px 0 0 0;
+  width: 380px;
+}
+.mission .role h3 {
+  margin: 0;
+}
+.mission .graph_mission {
+  margin: 0px;
+  width: 400px;
+  height: 250px;
 }
 
 .cercle {
@@ -1116,25 +1193,134 @@ button {
 .historique {
   grid-area: historique;
 }
+.historique .historique-container {
+  margin: 65px auto 10px;
+  width: 90%;
+  height: 120px;
+  display: flex;
+  flex-flow: row nowrap;
+  overflow-x: auto;
+}
+.historique .mission-histo {
+  margin: 0 2px;
+  padding: 2px;
+  width: 25px;
+  min-width: 25px;
+  height: 90px;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
 
 .medaille {
   grid-area: medaille;
+  width: 580px;
+  height: 200px;
+}
+.medaille .medaille-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.medaille img {
+  margin: 5px;
+  max-width: 15%;
 }
 
 .carte {
   grid-area: carte;
 }
+.carte .carte-img {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 80px;
+}
+.carte img {
+  margin: 20px auto;
+  width: 430px;
+  height: 230px;
+}
+.carte .photo-carte img {
+  height: 100%;
+}
+.carte .carte h2 {
+  display: none;
+  text-align: center;
+}
+.carte .carte-text {
+  position: absolute;
+  right: 20px;
+  width: 270px;
+  font-size: 13px;
+  line-height: 13px;
+}
 
 .oxy {
   grid-area: oxy;
 }
+.oxy .oxyContainer {
+  position: relative;
+  margin: 0px 0 20px 0;
+  width: 570px;
+  height: 150px;
+}
+.oxy .oxyBox {
+  position: absolute;
+  top: 5px;
+  left: 40px;
+}
 
+.pathBtm {
+  stroke-dasharray: 2000;
+  stroke-dashoffset: 2000;
+  animation: btm 2s linear infinite;
+}
+
+@keyframes btm {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
 .commentaire {
   grid-area: commentaire;
+}
+.commentaire .commentaire {
+  grid-area: commentaire;
+  height: 140px;
+  font-size: 0.9rem;
+}
+.commentaire .commentaire-container {
+  margin: 50px auto 0;
+  width: 400px;
+  height: 140px;
 }
 
 .kia {
   grid-area: kia;
+}
+.kia .kia-container {
+  position: relative;
+  margin-left: 20px;
+  width: 90px;
+  height: 100px;
+}
+.kia .vie {
+  position: absolute;
+  top: -10px;
+  left: 30px;
+}
+.kia .vie-bar {
+  position: absolute;
+  top: -10px;
+  left: 60px;
+}
+.kia .vie-text {
+  position: absolute;
+  top: -13px;
+  left: 80px;
 }
 
 .formulaire-container {
@@ -1374,6 +1560,21 @@ button[type=submit] {
 body {
   background-color: #0A0F15;
   font-family: zektonrg;
+  scrollbar-color: #fff #101726;
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #101726;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fff;
 }
 
 a, body {

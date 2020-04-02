@@ -85,11 +85,98 @@
     width: 80px;
     height: 80px;
     float: right;
+  }
+  .holo{
+    margin: 10px auto 0 20px  ;
+    width: 60%;
+    height: 170px;
+    float: left;
+  }
+  .list-membre{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 60px 0 auto ;
+    width: 22%;
+    height: 170px;
+    font-size: .8rem;   
+    float: right;
 }
+
+    .membres{
+        max-height: 150px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        scrollbar-width: thin;
+    }
+
+    .list-membre-svg{
+        position: absolute;
+        top:0;
+        z-index: -2;
+    }
 }
 
 .mission{
   grid-area: mission;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
+    .pourcentage{
+      margin: 20px 0 0px 30px;
+      width: 250px;
+      height: 250px;
+
+      h4 {
+        margin: 20px 0 5px 0px;
+        font-size: 1vw;
+      }
+      .containerBar{
+        width: 100%;
+        border: solid 1px #FFF;
+        border: rgb(37, 49, 104) solid 1px;
+        .back {
+          background: none !important;
+        }
+  
+        .skill {
+            text-align: right;
+            color: white;
+            padding-right: 20px;
+            line-height: 13px;
+        }
+      
+        #sauvetage{
+            background: #3385b7;
+        }
+      
+        #combat{
+            background: #530b00;
+        }
+      
+        #logistique{
+            background: #d69200;
+        }
+      
+        #exploration{
+            background: #425d00;
+        }
+      }
+  }
+  .role{
+    margin: 60px 0 0 0 ;
+    width:380px;
+    h3{
+      margin: 0 ;
+    }
+  }
+  .graph_mission{
+    margin:0px ;
+    width:400px;
+    height: 250px;
+  }
 }
 
 .cercle{
@@ -97,23 +184,144 @@
 }
 .historique{
   grid-area: historique;
+  .historique-container{
+    margin: 65px auto 10px;
+    width: 90%;
+    height: 120px;
+    display: flex;
+    flex-flow: row nowrap;
+    overflow-x: auto;
+}
+
+    .mission-histo{
+        margin: 0 2px;
+        padding: 2px;
+        width: 25px;
+        min-width: 25px;
+        height: 90px;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+    }
 }
 
 .medaille{
   grid-area: medaille;
+  //margin: 10px 0  20px 70px ;
+  width: 580px;
+  height: 200px;
+  .medaille-container{
+    display: flex;
+    flex-flow: row wrap ;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+   img{
+    margin: 5px;
+    max-width: 15%;
+  }
 }
 
 .carte{
   grid-area: carte;
+  .carte-img{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 80px ;
+    }
+
+  img{
+    margin: 20px auto;
+    width: 430px;
+    height: 230px;
+  }
+  .photo-carte img{
+    height: 100%;
+  }
+
+  .carte h2{
+    display: none;
+    text-align: center;
+  }
+  .carte-text{
+    position: absolute;
+    right: 20px;
+    width: 270px;
+    font-size: 13px;
+    line-height: 13px;
+  }
 }
 .oxy{
   grid-area: oxy;
+  .oxyContainer{
+    position: relative;
+    margin: 0px  0 20px 0;
+    width: 570px;
+    height: 150px;
+
+}
+.oxyBox{
+    position: absolute;
+    top:5px;
+    left: 40px;
+
+  }
+}
+
+.pathBtm{
+  stroke-dasharray: 2000;
+stroke-dashoffset: 2000;
+animation: btm 2s linear infinite;
+}
+
+@keyframes btm {
+to {
+stroke-dashoffset: 0;
+}
 }
 .commentaire{
   grid-area: commentaire;
+  .commentaire{
+    grid-area: commentaire;
+    height: 140px;
+    font-size: .9rem;
+}
+
+    .commentaire-container{
+        margin: 50px  auto 0;
+        width: 400px;
+        height: 140px;
+    }
 } 
 .kia{
   grid-area: kia;
+  .kia-container{
+    position: relative;
+    margin-left: 20px;
+    width: 90px;
+    height: 100px;
+}
+
+.vie{
+    position: absolute;
+    top: -10px;
+    left:30px;
+}
+
+.vie-bar{
+    position: absolute;
+    top: -10px;
+    left:60px;
+
+}
+
+.vie-text{
+    position: absolute;
+    top: -13px;
+    left: 80px;
+}
 }
 
 

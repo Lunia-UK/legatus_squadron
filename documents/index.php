@@ -67,7 +67,7 @@
                       <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0     315.372 177">
                         <defs>
                           <pattern id="pattern' . $i . '" preserveAspectRatio="xMidYMid slice" width="100%" height="100%">
-                           <image xlink:href="../reources/img/mission/' . $element['photo'] . '" width="100%"/>
+                           <image xlink:href="../resources/img/mission/' . $element['photo'] . '" width="100%"/>
                          </pattern>
                         </defs>
                           <path  id="_2019-12-28" data-name="' . $element['photo'] . '" d="M2391.04,1949.175l23.781-23.78h291.59v158.73l-26.826,24.981H2391.04Z"     transform="translate(-2391.04 -1925.395)" fill="url(#pattern' . $i . ')"/>

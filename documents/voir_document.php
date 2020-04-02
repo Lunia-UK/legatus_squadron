@@ -56,13 +56,13 @@
 
             </div>
             <div class="doubleCut img">
-                <img class="photo" src="../assets/img/mission/<?php echo $rapport_mission['photo']; ?>" width="100%"/>
+                <img class="photo" src="../resources/img/mission/<?php echo $rapport_mission['photo']; ?>" width="100%"/>
             </div>
             <div class="doubleCut video">
                 <?php if ($rapport_mission['video'] != null){
                    echo '<div id="player" style="width:350px; height: 200px;"></div>';
                     }else {
-                    echo '<img src="../assets/img/mission/frame.png">';
+                    echo '<img src="../resources/img/mission/frame.png">';
                  }
                 ?>
             </div>
@@ -73,7 +73,7 @@
         <div class="smallScreen ">
             <div class="body fixe">           
                 <div class="image">
-                    <img src="../assets/img/mission/2019-12-28.jpg" alt="">
+                    <img src="../resources/img/mission/2019-12-28.jpg" alt="">
                     <div class="etiquette">
                         <svg xmlns="http://www.w3.org/2000/svg" width="87.125" height="22.418" viewBox="0 0 87.125 22.418">
                             <path id="Path_26" data-name="Path 26" d="M2211,2917.659h82.4l4.722,7.023v15.395L2211,2939.6Z" transform="translate(-2211 -2917.659)" fill="#fff" opacity="0.5"/>
