@@ -255,7 +255,7 @@
 }
 .oxy{
   grid-area: oxy;
-  .oxyContainer{
+  .oxy-container{
     position: relative;
     margin: 0px  0 20px 0;
     width: 570px;
@@ -322,6 +322,154 @@ stroke-dashoffset: 0;
     top: -13px;
     left: 80px;
 }
+}
+
+
+@media screen and (max-width: 1860px){
+  .container-grid{
+      grid-template-columns: 50% 50%;
+      grid-template-rows: auto auto auto auto auto ;
+      grid-template-areas:
+          " legatus carte "
+          "historique historique"
+          " mission mission"
+          "commentaire commentaire"
+          "medaille medaille";
+      margin-top: 70px;
+  }
+
+  .structure, .kia, .oxy , .carte h2{
+      display: none;
+  }
+
+  .carte-img{
+      margin: 0;
+  }
+
+  .carte-text{
+      right: 0px;
+  }
+
+  .pourcentage,
+  .historique-container,
+  .carte,
+  .commentaire,
+  .medaille,
+  .legatus,
+  .role,
+  .graph_mission
+   {
+      margin: 25px auto;
+  }
+
+  .role{
+      margin: 50px auto;
+      h3{
+        margin: 50px auto
+    }
+  }
+   
+  .pourcentage{
+      margin: 20px auto
+  }
+
+  .pourcentage h4{
+      font-size: 20px;
+  }
+  .carte{
+      align-items: center;
+      align-content: center;
+  }
+  .groupe img{
+      width: 100%;
+  }
+
+  .photo-carte{
+      margin: 50px auto 0 ;
+  }
+
+  .medaille{
+      margin: 50px auto;
+      width: 60%;
+      img{
+        margin: 10px;
+    }
+  }
+  .commentaire{
+      text-align: center;
+  }
+}
+
+@media screen and (max-width: 950px){
+  .container-grid{
+      grid-template-columns: 100%;
+      grid-template-rows: auto auto auto auto auto ;
+      grid-template-areas:
+          " carte "
+          "historique"
+          " mission"
+          "commentaire"
+          "medaille";
+      margin-top: 70px;
+  }
+
+  .legatus {
+      display: none;
+  }
+
+  .carte img {
+      width: 95%;
+      height: auto;
+  }
+
+  .carte h2{
+      display: block;
+  }
+
+
+  .pourcentage{
+      order:2;
+      width: 80%;
+      h4{
+        font-size: 3vw;
+    }
+  }
+  .role{
+      order:3;
+  }
+
+  .graph_mission, .role, .photo-carte, .commentaireContainer, .medaille{
+      width: 60%;
+      height: auto;
+  }
+
+  .photo-carte img{
+      margin: auto;
+  }
+
+}
+
+@media screen and (max-width: 600px){
+  .graph_mission, .role, .commentaire-container, .medaille{
+      width: 90%;
+      height: auto;
+  }
+
+  .pourcentage h4{
+      font-size: 4.5vw;
+  }
+
+  .carte img {
+      width: 95%;
+      height: auto;
+  }
+
+  .carte-text{
+      font-size: 12px;
+      width: 180px;
+      margin-left: 140px;
+      line-height: 15px;
+  }
 }
 
 
