@@ -270,7 +270,7 @@ $(document).ready(function(){
 
             <!--Historique -->
             <div class="historique" style="position: relative;">
-              <p style="position: absolute; top: -50px; left:-5%;writing-mode: vertical-rl;text-orientation: upright;">Historique</p>
+              <p style="position: absolute; top: -7vh; left:-2%;writing-mode: vertical-rl;text-orientation: upright;">Historique</p>
                 <div class="historique-container">
                 <?php
                       $i = 0;
@@ -330,7 +330,7 @@ $(document).ready(function(){
 
             <!--Medailles -->
             <div class="medaille">
-                <svg  height="30" width="350" xmlns:xlink="http://www.w3.org/1999/xlink" >
+                <svg  height="40" width="450" xmlns:xlink="http://www.w3.org/1999/xlink" >
                         <filter id="shadowLegatus" x="0" y="0" width="300" height="175" filterUnits="userSpaceOnUse">
                             <feOffset dx="5" dy="5" input="SourceAlpha"/>
                             <feGaussianBlur stdDeviation="0.5" result="blur"/>
@@ -339,7 +339,7 @@ $(document).ready(function(){
                             <feComposite in="SourceGraphic"/>
                           </filter>
                           <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#shadowLegatus)">
-                        <text x="150" y="10" fill="#fff" style="font-size:25px">Vos medailles</text>
+                        <text x="100" y="35" fill="#fff" style="font-size:25px">Vos medailles</text>
                       </g>
                   </svg>
                   <div class="medaille-container">

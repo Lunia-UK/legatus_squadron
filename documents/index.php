@@ -140,7 +140,7 @@
     </section>
     <aside class="aside-large-screen">
        <div class="search-bar-container ">
-             <input onkeyup="search()" type="text" class="search-bar" placeholder="Chercher un membre..." title="Type in a name">
+             <input onkeyup="search()" type="text" class="search-bar" placeholder="Chercher un(e) document/mission ..." title="Type in a name">
        </div>
        <ul class="filters filterContainer">
          <li class="filter"><a href="#legatus" title="Legatus"><img src="../resources/img/logo/logo-w.png" alt="Legatus Icone" width="40px"></a></li>
@@ -152,7 +152,7 @@
     </aside>
     <aside class="aside-small-screen">
        <div class="search-bar-container">
-             <input onkeyup="search()" type="text" class="search-bar" placeholder="Chercher un membre..." title="Type in a name">
+             <input onkeyup="search()" type="text" class="search-bar" placeholder="Chercher un(e) document/mission ..." title="Type in a name">
        </div>
        <div class="filter-container-mobile">
            <a href="#"><button id="btn-filter">

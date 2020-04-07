@@ -57,7 +57,7 @@
 .container-grid{
   display: grid;
   grid-template-columns: auto 34.9% 28.1% 8.3% 20.8% auto;
-  grid-template-rows: auto 19vh 13.5vh 14.5vh 15vh 7vh 18vh auto;
+  grid-template-rows: auto 20vh 15vh 13vh 15vh 7vh 18vh auto;
   grid-template-areas:
       " . . . . . . "
       " . legatus cercle medaille medaille . "
@@ -72,7 +72,7 @@
 .legatus{
   grid-area: legatus;
   .groupe{
-    margin: 50px 10px 0   ;
+    margin: 10% 0 0  5% ;
     max-width: 70%;
     height: auto;
     float: left;
@@ -125,9 +125,8 @@
   justify-content: center;
 
     .pourcentage{
-      margin: 20px 0 0px 30px;
+      margin: 5% 0 3% 5%;
       width: 250px;
-      height: 250px;
 
       h4 {
         margin: 20px 0 5px 0px;
@@ -249,8 +248,8 @@
     position: absolute;
     right: 20px;
     width: 270px;
-    font-size: 13px;
-    line-height: 13px;
+    font-size: .7vw;
+    line-height: 2.5vh;
   }
 }
 .oxy{
@@ -297,13 +296,13 @@ stroke-dashoffset: 0;
 } 
 .kia{
   grid-area: kia;
-  .kia-container{
-    position: relative;
-    margin-left: 20px;
-    width: 90px;
-    height: 100px;
 }
-
+.kia-container{
+  position: relative;
+  margin-left: 20px;
+  width: 90px;
+  height: 100px;
+}
 .vie{
     position: absolute;
     top: -10px;
@@ -321,7 +320,6 @@ stroke-dashoffset: 0;
     position: absolute;
     top: -13px;
     left: 80px;
-}
 }
 
 
@@ -424,6 +422,8 @@ stroke-dashoffset: 0;
 
   .carte h2{
       display: block;
+      text-align: center;
+      font-size: 3vw;
   }
 
 
@@ -465,7 +465,7 @@ stroke-dashoffset: 0;
   }
 
   .carte-text{
-      font-size: 12px;
+      font-size: 1.2vw;
       width: 180px;
       margin-left: 140px;
       line-height: 15px;
