@@ -1,6 +1,6 @@
 <?php session_start(); ?>
-<?php  include '../src/connexion.php'; ?>
-<?php  include '../src/config/config_section_individuelle.php'; ?>
+<?php include '../src/connexion.php'; ?>
+<?php include '../src/config/config_section_individuelle.php'; ?>
 <?php include '../src/config/config_ribbons.php'; ?>
 <!DOCTYPE html>
 <html lang="fr">
