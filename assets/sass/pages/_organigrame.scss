@@ -1,0 +1,208 @@
+.oragnigrame{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.box{
+    fill: rgba(27, 137, 255, 0.637);
+    stroke: #3E9CFF;
+    stroke-width:.5;
+    opacity: .3
+}
+
+.box:hover{
+    transition: 0.3s;
+    opacity: .7;
+}
+
+
+.toggle{
+    transform:scale(1.05);
+    transform-origin: center;
+    opacity: .7;
+}
+
+.orga-eagle-title{
+    position: absolute;
+    top: 32%;
+    left: 48%;
+
+}
+
+
+
+.orga-eagle{
+    position: absolute;
+    top: 25%;
+    right: 3%;
+    width: 15%;
+    height: 50vh;
+    h2{
+        font-size: 1.1vw;
+        margin: 2% 5% ;
+    }
+
+    h3{
+        margin: 3% 5% ;
+    }
+    svg{
+        position: absolute;
+        z-index: -1;
+    }
+    p{
+        margin: 1% 5%;
+        font-size: .7vw;
+    }
+    .officiers-list{
+        height: 12vh;
+        overflow: auto;
+        scrollbar-width: thin;
+    }
+}
+
+.orga-seals{
+    position: absolute;
+    top: 68%;
+    right: 12%;
+    width: 21.5%;
+    height: 25vh;
+    h2{
+        font-size: 1.1vw;
+        margin: 2% 5% ;
+    }
+
+    h3{
+        margin: 3% 5% ;
+    }
+    svg{
+        position: absolute;
+        z-index: -1;
+    }
+    p{
+        margin: 1% 5%;
+        font-size: .7vw;
+    }
+    .officiers-list{
+        height: 6.5vh;
+        overflow: auto;
+        scrollbar-width: thin;
+    }
+}
+
+.orga-academie{
+    position: absolute;
+    top: 15%;
+    left: 2%;
+    width: 11.5%;
+    height: 35vh;
+    h2{
+        font-size: 1.1vw;
+        margin: 2% 5% ;
+    }
+
+    h3{
+        margin: 3% 5% ;
+    }
+    svg{
+        position: absolute;
+        z-index: -1;
+    }
+    p{
+        margin: 1% 5%;
+        font-size: .7vw;
+    }
+    .officiers-list{
+        height: 25vh;
+        overflow: auto;
+        scrollbar-width: thin;
+    }
+}
+
+.orga-legatusFleet{
+    position: absolute;
+    top: 30%;
+    left: 17%;
+    width: 19.7%;
+    height: 35vh;
+    h2{
+        font-size: 1.1vw;
+        margin: 2% 5% ;
+    }
+
+    h3{
+        margin: 3% 5% ;
+    }
+    svg{
+        position: absolute;
+        z-index: -1;
+    }
+    p{
+        margin: 1% 5%;
+        font-size: .7vw;
+    }
+    .officiers-list{
+        height: 11.5vh;
+        overflow: auto;
+        scrollbar-width: thin;
+    }
+}
+
+.orga-delta{
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    width: 36.8%;
+    height: 15vh;
+    h2{
+        font-size: 1.1vw;
+        margin: 2% 5% ;
+    }
+
+    h3{
+        margin: 3% 5% ;
+    }
+    svg{
+        position: absolute;
+        z-index: -1;
+    }
+    p{
+        margin: 1% 5%;
+        font-size: .7vw;
+    }
+    .officiers-list{
+        height: 8vh;
+        overflow: auto;
+        scrollbar-width: thin;
+    }
+}
+
+.orga-rogue{
+    position: absolute;
+    top: 15%;
+    right: 22%;
+    width: 16%;
+    height: 15vh;
+    h2{
+        font-size: 1.1vw;
+        margin: 2% 5% ;
+    }
+
+    h3{
+        margin: 3% 5% ;
+    }
+    svg{
+        position: absolute;
+        z-index: -1;
+    }
+    p{
+        margin: 1% 5%;
+        font-size: .7vw;
+    }
+    .officiers-list{
+        height: 35vh;
+        overflow: auto;
+        scrollbar-width: thin;
+    }
+}
