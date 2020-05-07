@@ -1,0 +1,420 @@
+.legatus{
+    opacity: 0;
+    animation: legatus 3s ease-in-out forwards;  
+}
+    @keyframes legatus{
+        10%{opacity: 0; }
+        80%{opacity: 1;}
+        100%{opacity: 1;}
+    }
+
+.mission{
+    opacity: 0;
+    animation: mission 3s ease-in-out forwards;   
+}
+
+@keyframes mission{
+    20%{opacity: 0; }
+    80%{opacity: 1;}
+    100%{opacity: 1;}
+}
+
+.carte{
+    opacity: 0;
+    animation: carte 3s ease-in-out forwards;
+}
+
+    @keyframes carte{
+        15%{opacity: 0; }
+        80%{opacity: 1;}
+        100%{opacity: 1;}
+    }
+
+.medaille{
+    opacity: 0;
+    animation: medaille 3s ease-in-out forwards;
+}
+
+    @keyframes medaille{
+        35%{opacity: 0; }
+        80%{opacity: 1;}
+        100%{opacity: 1;}
+    }
+
+.historique{
+    opacity: 0;
+    animation: historique 3s ease-in-out forwards;
+}
+
+    @keyframes historique{
+        15%{opacity: 0; }
+        80%{opacity: 1;}
+        100%{opacity: 1;}
+    }
+
+.oxy{
+    opacity: 0;
+    animation: oxy 3s ease-in-out forwards;
+}
+
+    @keyframes oxy{
+        25%{opacity: 0; }
+        80%{opacity: 1;}
+        100%{opacity: 1;}
+    }
+
+.commentaire{
+    opacity: 0;
+    animation: commentaire 3s ease-in-out forwards;
+}
+
+    @keyframes commentaire{
+        30%{opacity: 0; }
+        80%{opacity: 1;}
+        100%{opacity: 1;}
+    }
+
+.scanCercle{
+    transform: rotate(105deg);
+    animation: scanCercle 5s ease-in-out forwards;
+}
+
+@keyframes scanCercle{
+    10%{transform: rotate(50deg); }
+    50%{transform: rotate(160deg);}
+    80%{transform: rotate(200deg) ;}
+}
+
+#path_legatus-2{
+    opacity: 0;
+    animation: pathLegatus 3s ease-in-out forwards;
+}
+    @keyframes pathLegatus {
+        0% {stroke-dashoffset: 2000;}
+        20%{stroke-dashoffset: 2000; opacity: 1;}
+        100%{stroke-dashoffset: 0;opacity: 1;}
+    }
+
+#Path_226-2{
+    opacity: 0;
+    animation: pathLegatus2 2s ease-in-out forwards;
+}
+
+    @keyframes pathLegatus2 {
+        0% {stroke-dashoffset: 2000;}
+        25%{stroke-dashoffset: 2000; opacity: 1;}
+        100%{stroke-dashoffset: 0;opacity: 1;}
+}
+
+#legtusDeco-2, #legtusDeco8-2 {
+    opacity: 0;
+    animation: pathLegatus3 3s ease-in-out forwards;
+}
+
+    @keyframes pathLegatus3 {
+        0% {stroke-dashoffset: 2000;}
+        45%{stroke-dashoffset: 2000; opacity: 1;}
+        100%{stroke-dashoffset: 0;opacity: 1;}
+    }
+
+#path_histo1-2{
+    opacity: 0;
+    animation: pathHisto 2s ease-in-out forwards;
+}
+    @keyframes pathHisto {
+    0% {stroke-dashoffset: 2000;}
+    50%{stroke-dashoffset: 2000; opacity: 1;}
+    100%{stroke-dashoffset: 0;opacity: 1;}
+    }
+
+#path_missions-2{
+    opacity: 0;
+    animation: pathHisto1 2s ease-in-out forwards;
+}
+    @keyframes pathHisto1 {
+        0% {stroke-dashoffset: 2000;}
+        60%{stroke-dashoffset: 2000; opacity: 1;}
+        100%{stroke-dashoffset: 0;opacity: 1;}
+    }
+
+#path_historique-2{
+    opacity: 0;
+    animation: pathHisto2 2s ease-in-out forwards;
+}
+
+    @keyframes pathHisto2 {
+        0% {stroke-dashoffset: 2000;}
+        60%{stroke-dashoffset: 2000; opacity: 1;}
+        100%{stroke-dashoffset: 0;opacity: 1;}
+    }
+
+#path_adn-2{
+    opacity: 0;
+    animation: pathAdn 1s ease-in-out forwards;
+}
+    @keyframes pathAdn {
+        0% {stroke-dashoffset: 2000;}
+        60%{stroke-dashoffset: 2000; opacity: 1;}
+        100%{stroke-dashoffset: 0;opacity: 1;}
+    }
+
+#fp-2{
+    opacity: 0;
+    animation: pathfp 1s ease-in-out forwards;
+}
+    @keyframes pathfp {
+        0% {stroke-dashoffset: 2000;}
+        60%{stroke-dashoffset: 2000; opacity: 1;}
+        100%{stroke-dashoffset: 0;opacity: 1;}
+    }
+
+#path_carte-2, #Path_195-2{
+    opacity: 0;
+    animation: pathCarte 1s ease-in-out forwards;
+}
+
+    @keyframes pathCarte {
+        0% {stroke-dashoffset: 2000;}
+        60%{stroke-dashoffset: 2000; opacity: 1;}
+        100%{stroke-dashoffset: 0;opacity: 1;}
+    }
+
+#path_oxy-2, #Path_199-2{
+    opacity: 0;
+    animation: pathOxy 2s ease-in-out forwards;
+}
+
+    @keyframes pathOxy {
+        0% {stroke-dashoffset: 2000;}
+        60%{stroke-dashoffset: 2000; opacity: 1;}
+        100%{stroke-dashoffset: 0;opacity: 1;}
+    }
+
+#path_xp-2{
+    opacity: 0;
+    animation: pathxp 3s ease-in-out forwards;
+}
+@keyframes pathxp {
+    0% {stroke-dashoffset: 2000;}
+    60%{stroke-dashoffset: 2000; opacity: 1;}
+    100%{stroke-dashoffset: 0;opacity: 1;}
+}
+
+#Path_198-2{
+    opacity: 0;
+    animation: pathxpDeco 3.5s ease-in-out forwards;
+}
+@keyframes pathxpDeco {
+    0% {stroke-dashoffset: 2000;}
+    60%{stroke-dashoffset: 2000; opacity: 1;}
+    100%{stroke-dashoffset: 0;opacity: 1;}
+}
+#Path_432-2{
+    opacity: 0;
+    animation: pathDeco4 3s ease-in-out forwards;
+}
+    @keyframes pathDeco4 {
+        0% {stroke-dashoffset: 2000;}
+        50%{stroke-dashoffset: 2000; opacity: 1;}
+        100%{stroke-dashoffset: 0;opacity: 1;}
+    }
+
+#Path_177-2{
+    opacity: 0;
+    animation: pathDeco0 3s ease-in-out forwards;
+}
+    @keyframes pathDeco0 {
+        0% {stroke-dashoffset: 2000;}
+        50%{stroke-dashoffset: 2000; opacity: 1;}
+        100%{stroke-dashoffset: 0;opacity: 1;}
+    }
+
+#Path_178-2{
+    opacity: 0;
+    animation: pathDeco 3s ease-in-out forwards;
+}
+    @keyframes pathDeco {
+        0% {stroke-dashoffset: 2000;}
+        60%{stroke-dashoffset: 2000; opacity: 1;}
+        100%{stroke-dashoffset: 0;opacity: 1;}
+    }
+
+#Path_179-2{
+    opacity: 0;
+    animation: pathDeco2 3s ease-in-out forwards;
+}
+    @keyframes pathDeco2 {
+        0% {stroke-dashoffset: 2000;}
+        60%{stroke-dashoffset: 2000; opacity: 1;}
+        100%{stroke-dashoffset: 0;opacity: 1;}
+    }
+
+#Path_438-2{
+    opacity: 0;
+    animation: pathDeco3 3s ease-in-out forwards;
+}
+    @keyframes pathDeco3 {
+        0% {stroke-dashoffset: 2000;}
+        60%{stroke-dashoffset: 2000; opacity: .5;}
+        100%{stroke-dashoffset: 0;opacity: .5;}
+    }
+
+#Path_439-2, #Path_440-2, #Path_436-2 {
+     opacity: 0;
+    animation: pathDeco5 3.2s ease-in-out forwards;
+}
+    @keyframes pathDeco5 {
+        0% {stroke-dashoffset: 2000;}
+        60%{stroke-dashoffset: 2000; opacity:.4;}
+        100%{stroke-dashoffset: 0;opacity: .4;}
+        }
+ #Path_435-2, #Path_445-2 {
+     opacity: 0;
+    animation: pathDeco6 3.8s ease-in-out forwards;
+}
+    @keyframes pathDeco6 {
+        0% {stroke-dashoffset: 2000;}
+        60%{stroke-dashoffset: 2000; opacity: .7;}
+        100%{stroke-dashoffset: 0;opacity: .7;}
+        }
+
+  #Path_429-2 {
+      opacity: 0;
+     animation: pathDeco7 4.2s ease-in-out forwards;
+ }
+     @keyframes pathDeco7 {
+         0% {stroke-dashoffset: 2000;}
+         60%{stroke-dashoffset: 2000; opacity: 1;}
+         100%{stroke-dashoffset: 0;opacity: 1;}
+         }  
+#Path_442-2, #Path_443-2, #Path_444-2 {
+        opacity: 0;
+       animation: pathDeco8 4.5s ease-in-out forwards;
+   }
+       @keyframes pathDeco8 {
+           0% {stroke-dashoffset: 2000;}
+           60%{stroke-dashoffset: 2000; opacity: .5;}
+           100%{stroke-dashoffset: 0;opacity: .5;}
+           }
+#legatusDeco2-2{
+    opacity: 0;
+    animation: pathDeco9 2.5s ease-in-out forwards;
+}
+    @keyframes pathDeco9 {
+        0% {stroke-dashoffset: 2000;}
+        60%{stroke-dashoffset: 2000; opacity: 1;}
+        100%{stroke-dashoffset: 0;opacity: 1;}
+        }
+
+#legatusDeco3, #legatusDeco4-2{
+    opacity: 0;
+    animation: pathDeco10 2.8s ease-in-out forwards;
+}
+
+@keyframes pathDeco10 {
+    0% {stroke-dashoffset: 2000;}
+    60%{stroke-dashoffset: 2000; opacity: 1;}
+    100%{stroke-dashoffset: 0;opacity: 1;}
+    }
+
+#legatusdeco5-2, #legatusDeco7-3, #legatusDeco7-4{
+    opacity: 0;
+    animation: pathDeco11 3.2s ease-in-out forwards;
+}
+@keyframes pathDeco11 {
+    0% {stroke-dashoffset: 2000;}
+    60%{stroke-dashoffset: 2000; opacity: 1;}
+    100%{stroke-dashoffset: 0;opacity: 1;}
+    }
+
+#Path_223-2,#Path_224-2,#Path_225-2, #Path_226-2, #Path_227-2, #Path_228-2, #Path_229-2{
+    opacity: 0;
+    animation: pathDeco12 3.2s ease-in-out forwards;
+}
+@keyframes pathDeco12 {
+    0% {stroke-dashoffset: 2000;}
+    40%{stroke-dashoffset: 2000; opacity: 1;}
+    100%{stroke-dashoffset: 0;opacity: 1;}
+    }
+
+#Path_230-2{
+    opacity: 0;
+    animation: pathDeco13 3.5s ease-in-out forwards;
+}
+@keyframes pathDeco13 {
+    0% {stroke-dashoffset: 2000;}
+    40%{stroke-dashoffset: 2000; opacity: 1;}
+    100%{stroke-dashoffset: 0;opacity: 1;}
+    }
+
+#Path_202-2{
+    opacity: 0;
+    animation: pathDeco14 3.8s ease-in-out forwards;
+}
+@keyframes pathDeco14 {
+    0% {stroke-dashoffset: 2000;}
+    40%{stroke-dashoffset: 2000; opacity: 1;}
+    100%{stroke-dashoffset: 0;opacity: 1;}
+    }
+
+#Path_203-2{
+    opacity: 0;
+    animation: pathDeco15 4s ease-in-out forwards;
+}
+@keyframes pathDeco15 {
+    0% {stroke-dashoffset: 2000;}
+    40%{stroke-dashoffset: 2000; opacity: 1;}
+    100%{stroke-dashoffset: 0;opacity: 1;}
+    }
+
+#Path_194-2,#Path_193-2{
+    opacity: 0;
+    animation: pathDeco16 4.5s ease-in-out forwards;
+}
+@keyframes pathDeco16 {
+    0% {stroke-dashoffset: 2000;}
+    40%{stroke-dashoffset: 2000; opacity: 1;}
+    100%{stroke-dashoffset: 0;opacity: 1;}
+}
+
+#Path_232-2,#Path_231-2{
+    opacity: 0;
+    animation: pathDeco17 4.8s ease-in-out forwards;
+}
+@keyframes pathDeco17 {
+    0% {stroke-dashoffset: 2000;}
+    40%{stroke-dashoffset: 2000; opacity: 1;}
+    100%{stroke-dashoffset: 0;opacity: 1;}
+    }
+
+#Path_441-2{
+    opacity: 0;
+    animation: pathDeco18 5s ease-in-out forwards;
+}
+@keyframes pathDeco18 {
+    0% {stroke-dashoffset: 2000;}
+    40%{stroke-dashoffset: 2000; opacity: 1;}
+    100%{stroke-dashoffset: 0;opacity: 1;}
+    }
+
+
+    
+.pathS{
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
+    }   
+
+    @media screen and (max-width: 1860px){
+        #msg{
+            animation: msg 4s forwards;
+            opacity: 1;
+            display: block;
+        }
+
+        @keyframes msg {
+            0% {opacity: 1; display: block;}
+            70%{opacity: 1; display: block;}
+            100%{opacity: 0; display: none;;}
+            }
+
+    }

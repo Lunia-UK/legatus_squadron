@@ -44,7 +44,6 @@ $(document).ready(function(){
           <?php include '../components/navigation/nav_mid.html'; ?>
               <h5>Section individuelle</h5>
           <?php include '../components/navigation/nav_end.html'; ?>
-    
     <div class="body">
         <div class="container-grid">
             <!-- Legatus -->
@@ -522,8 +521,7 @@ $(document).ready(function(){
 </div>
 <script>
    setTimeout(function(){ 
-     document.querySelector('#body').style.display ="block" 
-     document.querySelector('#msg').style.display ="none" ;}, 3000);
+     document.querySelector('#body').style.display ="block" ;}, 3000);
 </script>
 <script src="../resources/js/skill_bar.js"></script>
 <?php include '../resources/js/graph_role.php';?>

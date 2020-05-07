@@ -838,7 +838,7 @@ input[type=text] {
 }
 button {
   background: none;
-  border: solid 1px #fff;
+  border: none;
   color: #fff;
   cursor: pointer;
 }
@@ -1055,6 +1055,10 @@ button {
     display: none;
   }
 }
+.body_admin {
+  background: url("../../resources/img/bg_admin.png");
+}
+
 .container-adm {
   margin: 0 auto;
   margin-left: 8%;
@@ -1079,12 +1083,14 @@ button {
 .block_Xl {
   width: 100%;
   height: auto;
+  background: rgba(130, 162, 250, 0.055);
 }
 
 .block-large {
   width: 100%;
   height: 35vh;
   margin: 1%;
+  background: rgba(130, 162, 250, 0.055);
 }
 
 .graph-mission-admin-tablette,
@@ -1098,6 +1104,7 @@ button {
   width: 48%;
   height: 35vh;
   margin: 1%;
+  background: rgba(130, 162, 250, 0.055);
 }
 
 .svg-fill {
@@ -1711,6 +1718,10 @@ button {
   align-self: flex-end;
 }
 
+body {
+  background: url("../../resources/img/bg.png");
+}
+
 #msg {
   position: absolute;
   top: 45%;
@@ -2177,6 +2188,205 @@ button {
     line-height: 15px;
   }
 }
+.oragnigrame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box {
+  fill: rgba(27, 137, 255, 0.637);
+  stroke: #3E9CFF;
+  stroke-width: 0.5;
+  opacity: 0.3;
+}
+
+.box:hover {
+  transition: 0.3s;
+  opacity: 0.7;
+}
+
+.toggle {
+  transform: scale(1.05);
+  transform-origin: center;
+  opacity: 0.7;
+}
+
+.orga-eagle-title {
+  position: absolute;
+  top: 32%;
+  left: 48%;
+}
+
+.orga-eagle {
+  position: absolute;
+  top: 25%;
+  right: 3%;
+  width: 15%;
+  height: 50vh;
+}
+.orga-eagle h2 {
+  font-size: 1.1vw;
+  margin: 2% 5%;
+}
+.orga-eagle h3 {
+  margin: 3% 5%;
+}
+.orga-eagle svg {
+  position: absolute;
+  z-index: -1;
+}
+.orga-eagle p {
+  margin: 1% 5%;
+  font-size: 0.7vw;
+}
+.orga-eagle .officiers-list {
+  height: 12vh;
+  overflow: auto;
+  scrollbar-width: thin;
+}
+
+.orga-seals {
+  position: absolute;
+  top: 68%;
+  right: 12%;
+  width: 21.5%;
+  height: 25vh;
+}
+.orga-seals h2 {
+  font-size: 1.1vw;
+  margin: 2% 5%;
+}
+.orga-seals h3 {
+  margin: 3% 5%;
+}
+.orga-seals svg {
+  position: absolute;
+  z-index: -1;
+}
+.orga-seals p {
+  margin: 1% 5%;
+  font-size: 0.7vw;
+}
+.orga-seals .officiers-list {
+  height: 6.5vh;
+  overflow: auto;
+  scrollbar-width: thin;
+}
+
+.orga-academie {
+  position: absolute;
+  top: 15%;
+  left: 2%;
+  width: 11.5%;
+  height: 35vh;
+}
+.orga-academie h2 {
+  font-size: 1.1vw;
+  margin: 2% 5%;
+}
+.orga-academie h3 {
+  margin: 3% 5%;
+}
+.orga-academie svg {
+  position: absolute;
+  z-index: -1;
+}
+.orga-academie p {
+  margin: 1% 5%;
+  font-size: 0.7vw;
+}
+.orga-academie .officiers-list {
+  height: 25vh;
+  overflow: auto;
+  scrollbar-width: thin;
+}
+
+.orga-legatusFleet {
+  position: absolute;
+  top: 30%;
+  left: 17%;
+  width: 19.7%;
+  height: 35vh;
+}
+.orga-legatusFleet h2 {
+  font-size: 1.1vw;
+  margin: 2% 5%;
+}
+.orga-legatusFleet h3 {
+  margin: 3% 5%;
+}
+.orga-legatusFleet svg {
+  position: absolute;
+  z-index: -1;
+}
+.orga-legatusFleet p {
+  margin: 1% 5%;
+  font-size: 0.7vw;
+}
+.orga-legatusFleet .officiers-list {
+  height: 11.5vh;
+  overflow: auto;
+  scrollbar-width: thin;
+}
+
+.orga-delta {
+  position: absolute;
+  top: 70%;
+  left: 5%;
+  width: 36.8%;
+  height: 15vh;
+}
+.orga-delta h2 {
+  font-size: 1.1vw;
+  margin: 2% 5%;
+}
+.orga-delta h3 {
+  margin: 3% 5%;
+}
+.orga-delta svg {
+  position: absolute;
+  z-index: -1;
+}
+.orga-delta p {
+  margin: 1% 5%;
+  font-size: 0.7vw;
+}
+.orga-delta .officiers-list {
+  height: 8vh;
+  overflow: auto;
+  scrollbar-width: thin;
+}
+
+.orga-rogue {
+  position: absolute;
+  top: 15%;
+  right: 22%;
+  width: 16%;
+  height: 15vh;
+}
+.orga-rogue h2 {
+  font-size: 1.1vw;
+  margin: 2% 5%;
+}
+.orga-rogue h3 {
+  margin: 3% 5%;
+}
+.orga-rogue svg {
+  position: absolute;
+  z-index: -1;
+}
+.orga-rogue p {
+  margin: 1% 5%;
+  font-size: 0.7vw;
+}
+.orga-rogue .officiers-list {
+  height: 35vh;
+  overflow: auto;
+  scrollbar-width: thin;
+}
+
 .formulaire-container {
   margin-top: 50px;
   display: flex;

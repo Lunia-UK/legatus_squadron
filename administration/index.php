@@ -19,12 +19,12 @@
         <?php include '../components/navigation/nav_end.html'; ?>
     </div>
 
-    <div class="body">
+    <div class="body body_admin">
         <div class="block-nav cut">
             <?php include '../components/navigation/nav_administration.html'; ?>
         </div>
         <section class="container-adm">
-            <article class="block-large cut">
+            <article class="block-large">
                 <div class="graph-mission-admin">
                     <canvas  id="graph_mission_admin" width="1600" height="325"></canvas>
                 </div>
@@ -38,9 +38,9 @@
                     <canvas  id="graph_mission_admin_mobile" width="600" height="400"></canvas>
                 </div>
             </article>
-            <article class="block-mid cut">
+            <article class="block-mid">
             </article>
-            <article class="block-mid cut">
+            <article class="block-mid">
             </article>
         </section>
     <div>

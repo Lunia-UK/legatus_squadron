@@ -77,7 +77,7 @@
                             <path id="Path_30" data-name="Path 30" d="M2211,2917.659h407.073l23.326,22.136v48.52l-430.4-1.491Z" transform="translate    (-2211 -2917.659)" fill="#fff" opacity="0.5"/>
                         </svg>
                         <div class="articleText">
-                            <h2>' . $element["date_mission"] . '</h2>
+                            <h2>' .  implode('-', array_reverse(explode('-', $element["date_mission"]))) . '</h2>
                             <p class="textCut">' . $element['objectif_mission'] . '</p>
                         </div>
                       </div>
