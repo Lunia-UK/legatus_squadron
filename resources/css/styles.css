@@ -112,11 +112,11 @@ td:not([align]), th:not([align]) {
 input {
   background: none;
   border: none;
-  border-bottom: solid 1px #fff;
-  color: #fff;
+  border-bottom: solid 1px #fbfbfb;
+  color: #fbfbfb;
 }
 input::placeholder {
-  color: #fff;
+  color: #fbfbfb;
 }
 
 input[type=text] {
@@ -839,7 +839,7 @@ input[type=text] {
 button {
   background: none;
   border: none;
-  color: #fff;
+  color: #fbfbfb;
   cursor: pointer;
 }
 
@@ -867,7 +867,7 @@ button {
   transition: all 0.3s ease-out;
 }
 #menu li a {
-  color: #fff;
+  color: #fbfbfb;
   font-weight: 200;
   font-size: 17px;
 }
@@ -890,7 +890,7 @@ button {
   height: 1px;
   width: 100%;
   margin: 3% 0 0 0;
-  background-image: linear-gradient(142deg, rgba(255, 0, 0, 0) 20%, #fff 70%, #ffffff 100%);
+  background-image: linear-gradient(142deg, rgba(255, 0, 0, 0) 20%, #fbfbfb 70%, #ffffff 100%);
 }
 
 .resize, .menuTel {
@@ -932,7 +932,7 @@ button {
   margin-top: 7vh;
 }
 .menuTel li a {
-  color: #fff;
+  color: #fbfbfb;
   text-decoration: none;
   font-size: 18px;
 }
@@ -944,9 +944,30 @@ button {
   margin-top: 1.5vh;
 }
 .menuTelAdmin li a {
-  color: #fff;
+  color: #fbfbfb;
   text-decoration: none;
   font-size: 16px;
+}
+
+.nav {
+  position: absolute;
+  bottom: 5%;
+  width: 100%;
+}
+
+.nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.nav ul li {
+  display: grid;
+  place-items: center;
+  background-image: url(../../resources/svg/btnNav.svg);
+  width: 79px;
+  height: 70px;
+  margin: 0 2%;
 }
 
 @media (max-width: 1850px) {
@@ -1108,12 +1129,7 @@ button {
 }
 
 .svg-fill {
-  fill: #fff;
-}
-
-.body {
-  display: flex;
-  flex-flow: column nowrap;
+  fill: #fbfbfb;
 }
 
 .fixe {
@@ -1796,7 +1812,7 @@ body {
 
 .structure {
   position: absolute;
-  top: 55%;
+  top: 44%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 95%;
@@ -1806,8 +1822,8 @@ body {
 .container-grid {
   display: grid;
   grid-template-columns: auto 34.9% 28.1% 8.3% 20.8% auto;
-  grid-template-rows: auto 20vh 15vh 13vh 15vh 7vh 18vh auto;
-  grid-template-areas: " . . . . . . " " . legatus cercle medaille medaille . " " . legatus cercle carte carte . " " . mission cercle carte carte  . " " . mission cercle oxy oxy . " " . mission  cercle oxy oxy . " " . mission  historique historique commentaire  . " " . . . . . . ";
+  grid-template-rows: 20vh 15vh 13vh 15vh 7vh 18vh auto;
+  grid-template-areas: " . legatus cercle medaille medaille . " " . legatus cercle carte carte . " " . mission cercle carte carte  . " " . mission cercle oxy oxy . " " . mission  cercle oxy oxy . " " . mission  historique historique commentaire  . " " . . . . . . ";
 }
 
 .legatus {
@@ -2419,10 +2435,10 @@ label {
 
 input[type=text] {
   background: none;
-  color: #fff;
+  color: #fbfbfb;
   font-family: zektonrg;
   border: none;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #fbfbfb;
 }
 
 ::placeholder {
@@ -2433,8 +2449,8 @@ input[type=text] {
   text-align: center;
   background: none;
   border: none;
-  border-bottom: #fff solid 1px;
-  color: #fff;
+  border-bottom: #fbfbfb solid 1px;
+  color: #fbfbfb;
 }
 
 .textarea-rapport-mission {
@@ -2442,9 +2458,9 @@ input[type=text] {
   width: 90%;
   background: none;
   resize: none;
-  color: #fff;
+  color: #fbfbfb;
   font-family: zektonrg;
-  border: solid #fff 1px;
+  border: solid #fbfbfb 1px;
   padding: 10px;
 }
 
@@ -2455,8 +2471,8 @@ select {
   height: 30px;
   text-align: center;
   background: rgba(18, 38, 65, 0.7);
-  border: solid 1px #fff;
-  color: #fff;
+  border: solid 1px #fbfbfb;
+  color: #fbfbfb;
   font-family: zektonrg;
   font-size: 15px;
 }
@@ -2470,7 +2486,7 @@ select {
   visibility: hidden;
   width: 120px;
   background-color: #0a1324;
-  color: #fff;
+  color: #fbfbfb;
   text-align: center;
   border-radius: 6px;
   padding: 5px 0;
@@ -2624,7 +2640,7 @@ button[type=submit] {
 body {
   background-color: #0A0F15;
   font-family: zektonrg;
-  scrollbar-color: #fff #101726;
+  scrollbar-color: #fbfbfb #101726;
   scrollbar-width: thin;
 }
 
@@ -2638,11 +2654,11 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #fff;
+  background: #fbfbfb;
 }
 
 a, body {
-  color: #fff;
+  color: #fbfbfb;
 }
 
 a {

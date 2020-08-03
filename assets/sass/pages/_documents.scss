@@ -1,7 +1,4 @@
-.body{
-    display: flex;
-    flex-flow: column nowrap;
-}
+
 .fixe{
     position: fixed;
     top: 0;
@@ -11,7 +8,7 @@
     height: 65vh;
     overflow: auto;
     order: 1;
-    margin-top: 2%
+    margin-top: 2%;
 }
 .article-liste{
     display: flex;

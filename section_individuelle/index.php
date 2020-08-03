@@ -38,12 +38,6 @@ $(document).ready(function(){
 </script>
 <!--Loading body-->
 <div id="body" style="display:none;">
-    <div class="header">
-        <?php include '../components/navigation/nav_beginning.html'; ?>
-              <a href="../section_individuelle"><h4 id="pseudo"><?php echo $_SESSION['short_rank_name'] . " " . $_SESSION['pseudo'];?></h4></a>
-          <?php include '../components/navigation/nav_mid.html'; ?>
-              <h5>Section individuelle</h5>
-          <?php include '../components/navigation/nav_end.html'; ?>
     <div class="body">
         <div class="container-grid">
             <!-- Legatus -->
@@ -519,6 +513,22 @@ $(document).ready(function(){
     </div>
 </div>
 </div>
+<nav id="nav" class="nav">
+    <ul>
+        <li>
+            <a href="../"><img src="../resources/img/logo/logo-w.png" alt="" width="50px"></a>
+        </li>
+        <li>
+            <a href="../section_individuelle"><img src="../resources/svg/individual.svg" alt="" width="50px"></a>
+        </li>
+        <li>
+            <a href="../documents"><img src="../resources/svg/archives.svg" alt="" width="30px"></a>
+        </li>
+        <li>
+            <a href="../organigrame"><img src="../resources/svg/organigrame.svg" alt="" width="40px"></a>
+        </li>
+    </ul>
+</nav> 
 <script>
    setTimeout(function(){ 
      document.querySelector('#body').style.display ="block" ;}, 3000);

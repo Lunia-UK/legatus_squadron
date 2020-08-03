@@ -111,6 +111,26 @@
     }
 }
 
+.nav {
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+}
+.nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.nav ul li{
+    display: grid;
+    place-items: center;
+    background-image: url(../../resources/svg/btnNav.svg);
+    width: 79px;
+    height: 70px;
+    margin: 0 2%;
+}
+
 @media(max-width: $break-large) {
 
     .primary-nav {

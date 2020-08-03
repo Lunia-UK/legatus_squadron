@@ -11,13 +11,6 @@
     </style>
 </head>
 <body>
-    <div class="header">
-        <?php include 'components/navigation/nav_beginning.html'; ?>
-              <a href="section_individuelle"><h4 id="pseudo"><?php echo $_SESSION['short_rank_name'] . " " . $_SESSION['pseudo'];?></h4></a>
-          <?php include 'components/navigation/nav_mid.html'; ?>
-              <h5>Organigrame</h5>
-          <?php include 'components/navigation/nav_end.html'; ?>
-    </div>
     <div class="body">
         <svg class="oragnigrame" width="600" height="600" viewBox="-110 -110 750 750" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path id="box1" class="box" d="M0.0290527 247.972H108.963C109.215 235.441 111.105 223.034 114.579 211.097C117.952 199.507 122.815 188.364 129.033 177.977C141.313 157.463 158.709 140.221 179.342 128.114L124.58 33.3997C106.137 44.0915 89.0889 57.1353 73.9106 72.1689C58.7362 87.1973 45.5368 104.11 34.6795 122.434C31.9585 127.026 29.3535 131.764 26.9373 136.518C24.508 141.297 22.2061 146.216 20.0954 151.136C17.9715 156.088 15.9849 161.173 14.191 166.25C12.3846 171.363 10.726 176.603 9.26107 181.825C7.78459 187.087 6.46628 192.469 5.34285 197.821C4.20943 203.219 3.24401 208.73 2.47336 214.202C1.69545 219.725 1.09537 225.353 0.689715 230.931C0.280062 236.564 0.0577188 242.298 0.0290527 247.972Z" />
@@ -232,6 +225,22 @@
             </div>
         </div>
     </div>
+    <nav id="nav" class="nav">
+        <ul>
+            <li>
+                <a href=""><img src="resources/img/logo/logo-w.png" alt="" width="50px"></a>
+            </li>
+            <li>
+                <a href="section_individuelle"><img src="resources/svg/individual.svg" alt="" width="50px"></a>
+            </li>
+            <li>
+                <a href="documents"><img src="resources/svg/archives.svg" alt="" width="30px"></a>
+            </li>
+            <li>
+                <a href="organigrame"><img src="resources/svg/organigrame.svg" alt="" width="40px"></a>
+            </li>
+        </ul>
+    </nav> 
 
     
 

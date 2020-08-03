@@ -50,7 +50,7 @@ body{
 
 .structure{
   position: absolute;
-  top: 55%;
+  top: 44%;
   left: 50%;
   transform: translate(-50%,-50%);
   width: 95%;
@@ -60,9 +60,8 @@ body{
 .container-grid{
   display: grid;
   grid-template-columns: auto 34.9% 28.1% 8.3% 20.8% auto;
-  grid-template-rows: auto 20vh 15vh 13vh 15vh 7vh 18vh auto;
+  grid-template-rows: 20vh 15vh 13vh 15vh 7vh 18vh auto;
   grid-template-areas:
-      " . . . . . . "
       " . legatus cercle medaille medaille . "
       " . legatus cercle carte carte . "
       " . mission cercle carte carte  . "

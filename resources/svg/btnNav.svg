@@ -1,0 +1,14 @@
+<svg id="btnNav" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80.09" height="69.521" viewBox="0 0 80.09 69.521">
+    <defs>
+      <filter id="btnNavFilter" x="0" y="0" width="80.09" height="69.521" filterUnits="userSpaceOnUse">
+        <feOffset dx="5" dy="5" input="SourceAlpha"/>
+        <feGaussianBlur stdDeviation="0.5" result="blur"/>
+        <feFlood flood-color="#fff" flood-opacity="0.2"/>
+        <feComposite operator="in" in2="blur"/>
+        <feComposite in="SourceGraphic"/>
+      </filter>
+    </defs>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#btnNavFilter)">
+      <path id="btn-2" data-name="btn" d="M-15867.094-19478.605h60.816l11.709,11.705.063,50.316h-60.369l-12.146-12.145Z" transform="translate(15867.59 19479.11)" fill="none" stroke="#fff" stroke-width="1"/>
+    </g>
+</svg>

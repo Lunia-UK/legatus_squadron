@@ -11,14 +11,6 @@
     <title>Administration</title>
 </head>
 <body>
-    <div class="header">
-      <?php include '../components/navigation/nav_beginning.html'; ?>
-            <a href="../section_individuelle"><h4 id="pseudo"><?php echo $_SESSION['short_rank_name'] . " " . $_SESSION['pseudo'];?></h4></a>
-        <?php include '../components/navigation/nav_mid.html'; ?>
-            <h5>Administration</h5>
-        <?php include '../components/navigation/nav_end.html'; ?>
-    </div>
-
     <div class="body body_admin">
         <div class="block-nav cut">
             <?php include '../components/navigation/nav_administration.html'; ?>
@@ -44,6 +36,22 @@
             </article>
         </section>
     <div>
+    <nav id="nav" class="nav">
+        <ul>
+            <li>
+                <a href="../"><img src="../resources/img/logo/logo-w.png" alt="" width="50px"></a>
+            </li>
+            <li>
+                <a href="../section_individuelle"><img src="../resources/svg/individual.svg" alt="" width="50px"></a>
+            </li>
+            <li>
+                <a href="../documents"><img src="../resources/svg/archives.svg" alt="" width="30px"></a>
+            </li>
+            <li>
+                <a href="../organigrame"><img src="../resources/svg/organigrame.svg" alt="" width="40px"></a>
+            </li>
+        </ul>
+    </nav> 
     <?php include '../resources/js/nav_administration.php'; ?>
     <?php include '../resources/js/graph_mission_admin.php'; ?>
 </body>
