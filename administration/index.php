@@ -39,16 +39,16 @@
     <nav id="nav" class="nav">
         <ul>
             <li>
-                <a href="../"><img src="../resources/img/logo/logo-w.png" alt="" width="50px"></a>
+                <a href="../"><p>Legatus</p><img src="../resources/img/logo/logo-w.png" alt="" width="50px"></a>
             </li>
             <li>
-                <a href="../section_individuelle"><img src="../resources/svg/individual.svg" alt="" width="50px"></a>
+                <a href="../section_individuelle"><p>Section individuelle</p><img src="../resources/svg/individual.svg" alt="" width="50px"></a>
             </li>
             <li>
-                <a href="../documents"><img src="../resources/svg/archives.svg" alt="" width="30px"></a>
+                <a href="../documents"><p>Archives</p><img src="../resources/svg/archives.svg" alt="" width="30px"></a>
             </li>
             <li>
-                <a href="../organigrame"><img src="../resources/svg/organigrame.svg" alt="" width="40px"></a>
+                <a href="../organigrame"><p>Unitées</p><img src="../resources/svg/organigrame.svg" alt="" width="40px"></a>
             </li>
         </ul>
     </nav> 

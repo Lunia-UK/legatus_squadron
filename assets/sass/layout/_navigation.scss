@@ -123,12 +123,23 @@
 }
 
 .nav ul li{
+    position: relative;
     display: grid;
     place-items: center;
     background-image: url(../../resources/svg/btnNav.svg);
     width: 79px;
     height: 70px;
     margin: 0 2%;
+    p{
+        position: absolute;
+        bottom: 130%;
+        left: -20%;
+        opacity: 0.5;
+        transition: transform 330ms ease-in-out;
+    }
+    :hover +  p{
+       color: red;
+    }
 }
 
 @media(max-width: $break-large) {

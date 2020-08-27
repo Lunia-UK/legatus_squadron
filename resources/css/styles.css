@@ -962,12 +962,23 @@ button {
 }
 
 .nav ul li {
+  position: relative;
   display: grid;
   place-items: center;
   background-image: url(../../resources/svg/btnNav.svg);
   width: 79px;
   height: 70px;
   margin: 0 2%;
+}
+.nav ul li a p {
+  position: absolute;
+  bottom: 130%;
+  left: -20%;
+  opacity: 0.5;
+  transition:  330ms ease-in-out;
+}
+.nav ul li:hover + .nav ul li a p {
+  opacity: 1;
 }
 
 @media (max-width: 1850px) {
